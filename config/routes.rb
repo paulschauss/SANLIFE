@@ -1,12 +1,16 @@
 Rails.application.routes.draw do
-  get 'foods/index'
-  get 'user_illnesses/new'
-  get 'user_illnesses/create'
-  get 'users/show'
-  devise_for :users
+  devise_for :users, controllers: {
+    sessions: 'users/sessions'
+   }
   root to: 'pages#home'
 
   resources :users, only: [:show]
-  resources :user_illnesses, only: [:new, :create]
+  resources :user_illnesses, only: %i[new create]
   resources :foods, only: [:index]
+
+  resources :users do
+    member do
+      get :illness
+    end
+  end
 end
