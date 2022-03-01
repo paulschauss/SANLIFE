@@ -1,20 +1,19 @@
 require "csv"
 
-Illness.destroy_all
-IllnessNutrient.destroy_all
-NutrientFood.destroy_all
-Nutrient.destroy_all
 User.destroy_all
+Illness.destroy_all
+Food.destroy_all
+Nutrient.destroy_all
 
 puts "Data destroyed"
 
-amine = User.create!(first_name: 'Amine' last_name: 'LAFI' email: 'amine@sanlife.me', password: '123456')
+amine = User.create!(first_name: 'Amine', last_name: 'LAFI', email: 'amine@sanlife.me', password: '123456')
 puts "Amine user created"
 
-marie = User.create!(first_name: 'Marie' last_name: 'DELORI' email: 'marie@sanlife.me', password: '123456')
+marie = User.create!(first_name: 'Marie', last_name: 'DELORI', email: 'marie@sanlife.me', password: '123456')
 puts "Marie user created"
 
-paul = User.create!(first_name: 'Paul' last_name: 'SCHAUSS' email: 'paul@gsanlife.me', password: '123456')
+paul = User.create!(first_name: 'Paul', last_name: 'SCHAUSS', email: 'paul@sanlife.me', password: '123456')
 puts "Paul user created"
 
 illness_names = [
@@ -33,6 +32,7 @@ illness_names = [
 ]
 
 illness_names.each do |name|
+  puts "adding #{name} ..."
   illness = Illness.create!(name: name)
 
   CSV.foreach("data_seed/illness_nutrients.csv", headers: :first_row, header_converters: :symbol) do |row|
@@ -59,7 +59,10 @@ nutrient_data = {
 "Folate" => 'folate.csv'
 }
 
+puts "\n\n"
+
 nutrient_data.each do |name, file|
+  puts "adding #{name} ..."
   nutrient = Nutrient.create!(name: name)
 
   CSV.foreach("data_seed/#{file}", headers: :first_row, header_converters: :symbol) do |row|
