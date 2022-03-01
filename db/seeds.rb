@@ -4,6 +4,18 @@ Illness.destroy_all
 IllnessNutrient.destroy_all
 NutrientFood.destroy_all
 Nutrient.destroy_all
+User.destroy_all
+
+puts "Data destroyed"
+
+amine = User.create!(first_name: 'Amine' last_name: 'LAFI' email: 'amine@sanlife.me', password: '123456')
+puts "Amine user created"
+
+marie = User.create!(first_name: 'Marie' last_name: 'DELORI' email: 'marie@sanlife.me', password: '123456')
+puts "Marie user created"
+
+paul = User.create!(first_name: 'Paul' last_name: 'SCHAUSS' email: 'paul@gsanlife.me', password: '123456')
+puts "Paul user created"
 
 illness_names = [
 "Acne",
