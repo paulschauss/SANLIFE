@@ -7,7 +7,6 @@ class User < ApplicationRecord
   has_many :illnesses, through: :user_illnesses, dependent: :destroy
 
   validates :email, presence: true, uniqueness: true
-  validates :date_of_birth, presence: true
   validates :first_name, presence: true
   validates :last_name, presence: true
   validates :illness, presence: true, length: { maximum: 4 }
