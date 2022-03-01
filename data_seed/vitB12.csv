@@ -1,0 +1,48 @@
+fdcId,identifier,identifierType,foodType,foodDescription,value,foodWeight,valueUnit,foodMeasure,measureValue
+1999630,16222,NDB #,Foundation,"Soy milk, unsweetened, plain, shelf stable",0.0,100.0,g,"100 g",0.0
+1999631,14091,NDB #,Foundation,"Almond milk, unsweetened, plain, shelf stable",0.0,100.0,g,"100 g",0.0
+790508,1001,NDB #,Foundation,"Butter, stick, salted",0.0,100.0,g,"100 g",0.0
+748967,1123,NDB #,Foundation,"Eggs, Grade A, Large, egg whole",1.02,50.3,g,"1 egg, whole without shell",0.513
+746785,5666,NDB #,Foundation,"Turkey, ground, 93% lean, 7% fat, pan-broiled crumbles",1.9,155.0,g,"1 paired cooked w, crumbles",2.94
+746781,100173,NDB #,Foundation,"Sausage, pork, chorizo, link or ground, cooked, pan-fried",1.21,80.4,g,"1 link, medium",0.973
+746781,100173,NDB #,Foundation,"Sausage, pork, chorizo, link or ground, cooked, pan-fried",1.21,185.0,g,"1 cup, ground",2.24
+746781,100173,NDB #,Foundation,"Sausage, pork, chorizo, link or ground, cooked, pan-fried",1.21,186.0,g,"1 link, long",2.25
+746780,7089,NDB #,Foundation,"Sausage, Italian, pork, mild, cooked, pan-fried",1.06,86.6,g,"1 link, medium",0.918
+746782,1077,NDB #,Foundation,"Milk, whole, 3.25% milkfat, with added vitamin D",0.54,249.0,g,"1 cup",1.34
+746783,7919,NDB #,Foundation,"Sausage, turkey, breakfast links, mild, raw",1.2,27.9,g,"1 link",0.335
+746783,7919,NDB #,Foundation,"Sausage, turkey, breakfast links, mild, raw",1.2,450.0,g,"1 package",5.4
+746776,1085,NDB #,Foundation,"Milk, nonfat, fluid, with added vitamin A and vitamin D (fat free or skim)",0.58,246.0,g,"1 cup",1.43
+746779,7954,NDB #,Foundation,"Sausage, breakfast sausage, beef, pre-cooked, unprepared",1.13,18.6,g,"1 link",0.21
+746778,1079,NDB #,Foundation,"Milk, reduced fat, fluid, 2% milkfat, with added vitamin A and vitamin D",0.55,245.0,g,"1 cup",1.35
+746774,36622,NDB #,Foundation,"Restaurant, Chinese, sweet and sour pork",0.19,41.8,g,"3 pieces",0.079
+746774,36622,NDB #,Foundation,"Restaurant, Chinese, sweet and sour pork",0.19,611.0,g,"1 order",1.16
+746772,1082,NDB #,Foundation,"Milk, lowfat, fluid, 1% milkfat, with added vitamin A and vitamin D",0.61,246.0,g,"1 cup",1.5
+746765,1227,NDB #,Foundation,"Cheese, dry white, queso seco",1.7,97.3,g,"1 cup, grated",1.65
+746766,1036,NDB #,Foundation,"Cheese, ricotta, whole milk",0.78,129.0,g,"0.5 cup",1.01
+746766,1036,NDB #,Foundation,"Cheese, ricotta, whole milk",0.78,258.0,g,"1 cup",2.01
+746766,1036,NDB #,Foundation,"Cheese, ricotta, whole milk",0.78,64.6,g,"0.2 cup",0.504
+746767,1040,NDB #,Foundation,"Cheese, swiss",3.02,10.9,g,"1 slice, thin",0.329
+746767,1040,NDB #,Foundation,"Cheese, swiss",3.02,21.9,g,"1 slice, regular",0.661
+746760,23362,NDB #,Foundation,"Beef, round, eye of round roast, boneless, separable lean only, trimmed to 0 fat, select, raw",2.06,690.0,g,"1 roast, raw",14.2
+746763,13236,NDB #,Foundation,"Beef, short loin, t-bone steak, bone-in, separable lean only, trimmed to 1/8 fat, choice, cooked, grilled",1.88,360.0,g,"1 steak, cooked",6.77
+746759,23385,NDB #,Foundation,"Beef, loin, top loin steak, boneless, lip-on, separable lean only, trimmed to 1/8 fat, choice, raw",1.72,284.0,g,"1 steak, raw",4.88
+746761,23359,NDB #,Foundation,"Beef, round, top round roast, boneless, separable lean only, trimmed to 0 fat, select, raw",1.62,788.0,g,"1 roast, raw",12.8
+746762,13468,NDB #,Foundation,"Beef, short loin, porterhouse steak, separable lean only, trimmed to 1/8 fat, select, raw",1.98,525.0,g,"1 steak, raw",10.4
+746758,23377,NDB #,Foundation,"Beef, loin, tenderloin roast, separable lean only, boneless, trimmed to 0 fat, select, cooked, roasted",4.21,462.0,g,"1 roast, cooked",19.4
+334628,36412,NDB #,Foundation,"Restaurant, Latino, tamale, pork",0.12,142.0,g,"1 piece",0.17
+334194,15121,NDB #,Foundation,"Fish, tuna, light, canned in water, drained solids",2.57,107.0,g,"1 can, drained solids",2.75
+334194,15121,NDB #,Foundation,"Fish, tuna, light, canned in water, drained solids",2.57,142.0,g,"1 can, total can contents",3.65
+333476,15066,NDB #,Foundation,"Fish, pollock, raw",1.63,177.0,g,"1 fillet",2.88
+333374,15033,NDB #,Foundation,"Fish, haddock, raw",1.83,176.0,g,"1 fillet",3.22
+331960,5746,NDB #,Foundation,"Chicken, broiler or fryers, breast, skinless, boneless, meat only, cooked, braised",0.2,174.0,g,"1 piece",0.348
+331897,5671,NDB #,Foundation,"Chicken, broilers or fryers, drumstick, meat only, cooked, braised",0.41,94.7,g,"1 drumstick, without skin",0.388
+331897,5671,NDB #,Foundation,"Chicken, broilers or fryers, drumstick, meat only, cooked, braised",0.41,104.0,g,"1 drumstick, with skin",0.426
+330415,1285,NDB #,Foundation,"Yogurt, Greek, strawberry, nonfat",0.45,150.0,g,"1 container, 5.3 oz",0.675
+330137,1256,NDB #,Foundation,"Yogurt, Greek, plain, nonfat",0.7,156.0,g,"1 container",1.09
+329370,1029,NDB #,Foundation,"Cheese, mozzarella, low moisture, part-skim",1.65,86.2,g,"1 cup",1.42
+328841,1015,NDB #,Foundation,"Cheese, cottage, lowfat, 2% milkfat",0.42,220.0,g,"1 cup",0.924
+328637,1009,NDB #,Foundation,"Cheese, cheddar",1.06,105.0,g,"1 cup",1.11
+328637,1009,NDB #,Foundation,"Cheese, cheddar",1.06,17.0,g,"1 slice",0.18
+325198,1042,NDB #,Foundation,"Cheese, pasteurized process, American, vitamin D fortified",1.45,20.6,g,"1 slice",0.299
+325036,1032,NDB #,Foundation,"Cheese, parmesan, grated",1.35,7.6,g,"1 tablespoon",0.103
+323121,7022,NDB #,Foundation,"Frankfurter, beef, unheated",0.97,48.6,g,"1 piece",0.471

@@ -1,0 +1,190 @@
+fdcId,identifier,identifierType,foodType,foodDescription,value,foodWeight,valueUnit,foodMeasure,measureValue
+2003604,100265,NDB #,Foundation,"Mushroom, pioppini",3.5,100.0,g,"100 g",3.5
+2003603,100264,NDB #,Foundation,"Mushroom, beech",2.18,100.0,g,"100 g",2.18
+2003602,11993,NDB #,Foundation,"Mushroom, maitake",2.203125,100.0,g,"100 g",2.203125
+2003601,11266,NDB #,Foundation,"Mushroom, crimini",3.09375,100.0,g,"100 g",3.09375
+2003600,11950,NDB #,Foundation,"Mushroom, enoki",2.416875,100.0,g,"100 g",2.416875
+2003599,100263,NDB #,Foundation,"Mushroom, king oyster",2.40625,100.0,g,"100 g",2.40625
+2003598,11243,NDB #,Foundation,"Mushroom, portabella",2.75,100.0,g,"100 g",2.75
+2003597,9206,NDB #,Foundation,"Orange juice, no pulp, not fortified, not from concentrate, refrigerated",0.8125,100.0,g,"100 g",0.8125
+2003596,11540,NDB #,Foundation,"Tomato juice, with added ingredients, from concentrate, shelf stable",0.859375,100.0,g,"100 g",0.859375
+2003595,100267,NDB #,Foundation,"Grapefruit juice, red, not fortified, not from concentrate, refrigerated",0.5703125,100.0,g,"100 g",0.5703125
+2003594,43382,NDB #,Foundation,"Cranberry juice, not fortified, from concentrate, shelf stable",0.0,100.0,g,"100 g",0.0
+2003593,100266,NDB #,Foundation,"Grape juice, white, with added vitamin C, from concentrate, shelf stable",0.09375,100.0,g,"100 g",0.09375
+2003592,9130,NDB #,Foundation,"Grape juice, purple, with added vitamin C, from concentrate, shelf stable",0.2578125,100.0,g,"100 g",0.2578125
+2003591,9209,NDB #,Foundation,"Orange juice, no pulp, not fortified, from concentrate, refrigerated",0.734375,100.0,g,"100 g",0.734375
+2003590,9400,NDB #,Foundation,"Apple juice, with added vitamin C, from concentrate, shelf stable",0.0859375,100.0,g,"100 g",0.0859375
+2003589,100270,NDB #,Foundation,"Flour, semolina, fine",13.33125,100.0,g,"100 g",13.33125
+2003588,100269,NDB #,Foundation,"Flour, semolina, coarse and semi-coarse",11.73125,100.0,g,"100 g",11.73125
+2003587,20140,NDB #,Foundation,"Flour, spelt, whole grain",14.475,100.0,g,"100 g",14.475
+2003586,100268,NDB #,Foundation,"Flour, 00",11.4,100.0,g,"100 g",11.4
+1999634,100261,NDB #,Foundation,"Tomato, roma",0.695625,100.0,g,"100 g",0.695625
+1999633,11457,NDB #,Foundation,"Spinach, mature",2.90625,100.0,g,"100 g",2.90625
+1999632,100260,NDB #,Foundation,"Spinach, baby",2.851875,100.0,g,"100 g",2.851875
+1999631,14091,NDB #,Foundation,"Almond milk, unsweetened, plain, shelf stable",0.5546875,100.0,g,"100 g",0.5546875
+1999630,16222,NDB #,Foundation,"Soy milk, unsweetened, plain, shelf stable",3.546875,100.0,g,"100 g",3.546875
+1999629,11260,NDB #,Foundation,"Mushrooms, white button",2.890625,100.0,g,"100 g",2.890625
+1999628,11238,NDB #,Foundation,"Mushrooms, shiitake",2.414375,100.0,g,"100 g",2.414375
+1999627,11987,NDB #,Foundation,"Mushroom, oyster",2.89875,100.0,g,"100 g",2.89875
+1999626,100259,NDB #,Foundation,"Mushroom, lion's mane",2.5,100.0,g,"100 g",2.5
+1750343,9501,NDB #,Foundation,"Apples, honeycrisp, with skin, raw",0.1015625,100.0,g,"100 g",0.1015625
+1750342,9502,NDB #,Foundation,"Apples, granny smith, with skin, raw",0.265625,100.0,g,"100 g",0.265625
+1750341,9503,NDB #,Foundation,"Apples, gala, with skin, raw",0.1328125,100.0,g,"100 g",0.1328125
+1750340,9504,NDB #,Foundation,"Apples, fuji, with skin, raw",0.1484375,100.0,g,"100 g",0.1484375
+1750339,9500,NDB #,Foundation,"Apples, red delicious, with skin, raw",0.1875,100.0,g,"100 g",0.1875
+1105314,9040,NDB #,Foundation,"Bananas, ripe and slightly ripe, raw",0.74,115.0,g,"1 Banana, Peeled",0.851
+1105073,100254,NDB #,Foundation,"Bananas, overripe, raw",0.73,110.0,g,"1 Banana, Peeled",0.803
+1104812,20090,NDB #,Foundation,"Flour, rice, brown",7.0,100.0,g,"100 g",7.0
+1104913,100256,NDB #,Foundation,"Flour, pastry, unenriched, unbleached",8.75,100.0,g,"100 g",8.75
+1104962,100255,NDB #,Foundation,"Onions, white, raw",0.89,100.0,g,"100 g",0.89
+1104705,16117,NDB #,Foundation,"Flour, soy, defatted",51.1,100.0,g,"100 g",51.1
+1104766,16115,NDB #,Foundation,"Flour, soy, full-fat",38.6,100.0,g,"100 g",38.6
+1104647,11215,NDB #,Foundation,"Garlic, raw",6.62,100.0,g,"100 g",6.62
+790646,100253,NDB #,Foundation,"Onions, yellow, raw",0.83,143.0,g,"1 Onion, Edible",1.19
+790577,100252,NDB #,Foundation,"Onions, red, raw",0.94,197.0,g,"1 Onion, Edible",1.85
+790214,20061,NDB #,Foundation,"Flour, rice, white, unenriched",6.94,100.0,g,"100 g",6.94
+790146,20083,NDB #,Foundation,"Flour, bread, white, enriched, unbleached",14.3,100.0,g,"100 g",14.3
+790276,100251,NDB #,Foundation,"Flour, corn, yellow, fine meal, enriched",6.2,100.0,g,"100 g",6.2
+790085,20080,NDB #,Foundation,"Flour, whole wheat, unenriched",15.1,100.0,g,"100 g",15.1
+789890,20081,NDB #,Foundation,"Flour, wheat, all-purpose, enriched, bleached",10.9,100.0,g,"100 g",10.9
+790018,20481,NDB #,Foundation,"Flour, wheat, all-purpose, unenriched, unbleached",12.0,100.0,g,"100 g",12.0
+789951,20581,NDB #,Foundation,"Flour, wheat, all-purpose, enriched, unbleached",13.1,100.0,g,"100 g",13.1
+749420,10896,NDB #,Foundation,"Pork, cured, bacon, cooked, restaurant",40.9,6.3,g,"1 slice",2.58
+748967,1123,NDB #,Foundation,"Eggs, Grade A, Large, egg whole",12.4,50.3,g,"1 egg, whole without shell",6.24
+748236,1125,NDB #,Foundation,"Eggs, Grade A, Large, egg yolk",16.2,17.0,g,"1 egg, yolk",2.75
+747997,1124,NDB #,Foundation,"Eggs, Grade A, Large, egg white",10.7,34.0,g,"1 egg, white",3.64
+747693,11966,NDB #,Foundation,"Ketchup, restaurant",1.11,100.0,g,"100 g",1.11
+747445,16515,NDB #,Foundation,"Beans, Dry, Pinto (0% moisture)",23.7,100.0,g,"100 g",23.7
+747442,16512,NDB #,Foundation,"Beans, Dry, Small White (0% moisture)",24.5,100.0,g,"100 g",24.5
+747437,16507,NDB #,Foundation,"Beans, Dry, Cranberry (0% moisture)",24.4,100.0,g,"100 g",24.4
+747433,16503,NDB #,Foundation,"Beans, Dry, Brown (0% moisture)",25.6,100.0,g,"100 g",25.6
+747440,16510,NDB #,Foundation,"Beans, Dry, Dark Red Kidney (0% moisture)",25.9,100.0,g,"100 g",25.9
+747443,16513,NDB #,Foundation,"Beans, Dry, Small Red (0% moisture)",23.5,100.0,g,"100 g",23.5
+747436,16506,NDB #,Foundation,"Beans, Dry, Carioca (0% moisture)",25.2,100.0,g,"100 g",25.2
+747446,16516,NDB #,Foundation,"Beans, Dry, Great Northern (0% moisture)",24.7,100.0,g,"100 g",24.7
+747432,16502,NDB #,Foundation,"Beans, Dry, Flor de Mayo (0% moisture)",23.3,100.0,g,"100 g",23.3
+747435,16505,NDB #,Foundation,"Beans, Dry, Light Tan (0% moisture)",24.6,100.0,g,"100 g",24.6
+747448,9316,NDB #,Foundation,"Strawberries, raw",0.64,100.0,g,"100 g",0.64
+747439,16509,NDB #,Foundation,"Beans, Dry, Pink (0% moisture)",23.4,100.0,g,"100 g",23.4
+747444,16514,NDB #,Foundation,"Beans, Dry, Black (0% moisture)",24.4,100.0,g,"100 g",24.4
+747438,16508,NDB #,Foundation,"Beans, Dry, Light Red Kidney (0% moisture)",25.0,100.0,g,"100 g",25.0
+747434,16504,NDB #,Foundation,"Beans, Dry, Tan (0% moisture)",26.8,100.0,g,"100 g",26.8
+747447,11090,NDB #,Foundation,"Broccoli, raw",2.57,76.0,g,"1 cup, chopped",1.95
+747441,16511,NDB #,Foundation,"Beans, Dry, Navy (0% moisture)",24.1,100.0,g,"100 g",24.1
+747431,16501,NDB #,Foundation,"Beans, Dry, Red (0% moisture)",21.3,100.0,g,"100 g",21.3
+747430,16500,NDB #,Foundation,"Beans, Dry, Medium Red (0% moisture)",25.5,100.0,g,"100 g",25.5
+747429,1062,NDB #,Foundation,"Cheese, American, restaurant",17.5,16.0,g,"1 slice",2.8
+746952,7129,NDB #,Foundation,"Ham, sliced, restaurant",19.6,16.2,g,"1 slice",3.18
+746784,19335,NDB #,Foundation,"Sugars, granulated",0.0,188.0,g,"1 cup",0.0
+746784,19335,NDB #,Foundation,"Sugars, granulated",0.0,4.0,g,"1 teaspoon",0.0
+746783,7919,NDB #,Foundation,"Sausage, turkey, breakfast links, mild, raw",16.7,27.9,g,"1 link",4.66
+746783,7919,NDB #,Foundation,"Sausage, turkey, breakfast links, mild, raw",16.7,450.0,g,"1 package",75.2
+746785,5666,NDB #,Foundation,"Turkey, ground, 93% lean, 7% fat, pan-broiled crumbles",27.1,155.0,g,"1 paired cooked w, crumbles",42.0
+746781,100173,NDB #,Foundation,"Sausage, pork, chorizo, link or ground, cooked, pan-fried",19.3,80.4,g,"1 link, medium",15.5
+746781,100173,NDB #,Foundation,"Sausage, pork, chorizo, link or ground, cooked, pan-fried",19.3,185.0,g,"1 cup, ground",35.7
+746781,100173,NDB #,Foundation,"Sausage, pork, chorizo, link or ground, cooked, pan-fried",19.3,186.0,g,"1 link, long",35.9
+746780,7089,NDB #,Foundation,"Sausage, Italian, pork, mild, cooked, pan-fried",18.2,86.6,g,"1 link, medium",15.8
+746782,1077,NDB #,Foundation,"Milk, whole, 3.25% milkfat, with added vitamin D",3.27,249.0,g,"1 cup",8.14
+746779,7954,NDB #,Foundation,"Sausage, breakfast sausage, beef, pre-cooked, unprepared",13.3,18.6,g,"1 link",2.47
+746776,1085,NDB #,Foundation,"Milk, nonfat, fluid, with added vitamin A and vitamin D (fat free or skim)",3.43,246.0,g,"1 cup",8.44
+746777,6164,NDB #,Foundation,"Sauce, salsa, ready-to-serve",1.44,35.7,g,"2 tablespoon",0.514
+746778,1079,NDB #,Foundation,"Milk, reduced fat, fluid, 2% milkfat, with added vitamin A and vitamin D",3.36,245.0,g,"1 cup",8.23
+746773,9412,NDB #,Foundation,"Pears, raw, bartlett",0.38,148.0,g,"1 each, small",0.562
+746773,9412,NDB #,Foundation,"Pears, raw, bartlett",0.38,230.0,g,"1 each, large",0.874
+746773,9412,NDB #,Foundation,"Pears, raw, bartlett",0.38,178.0,g,"1 each, medium",0.676
+746773,9412,NDB #,Foundation,"Pears, raw, bartlett",0.38,140.0,g,"1 cup, slices",0.532
+746772,1082,NDB #,Foundation,"Milk, lowfat, fluid, 1% milkfat, with added vitamin A and vitamin D",3.38,246.0,g,"1 cup",8.32
+746774,36622,NDB #,Foundation,"Restaurant, Chinese, sweet and sour pork",8.88,41.8,g,"3 pieces",3.71
+746774,36622,NDB #,Foundation,"Restaurant, Chinese, sweet and sour pork",8.88,611.0,g,"1 order",54.3
+746770,9181,NDB #,Foundation,"Melons, cantaloupe, raw",0.82,55.0,g,"1 wedge, small (1/8 of small melon)",0.451
+746770,9181,NDB #,Foundation,"Melons, cantaloupe, raw",0.82,552.0,g,"1 each, medium (about 5 dia)",4.53
+746770,9181,NDB #,Foundation,"Melons, cantaloupe, raw",0.82,156.0,g,"1 cup, diced",1.28
+746770,9181,NDB #,Foundation,"Melons, cantaloupe, raw",0.82,138.0,g,"10 pieces, balls",1.13
+746770,9181,NDB #,Foundation,"Melons, cantaloupe, raw",0.82,160.0,g,"1 cup, cubes",1.31
+746770,9181,NDB #,Foundation,"Melons, cantaloupe, raw",0.82,814.0,g,"1 each, large (about 6-1/2 dia)",6.68
+746770,9181,NDB #,Foundation,"Melons, cantaloupe, raw",0.82,441.0,g,"1 each, small (about 4-1/4 dia)",3.62
+746770,9181,NDB #,Foundation,"Melons, cantaloupe, raw",0.82,102.0,g,"1 wedge, large (1/8 of large melon)",0.836
+746770,9181,NDB #,Foundation,"Melons, cantaloupe, raw",0.82,69.0,g,"1 wedge, medium (1/8 of medium melon)",0.566
+746771,9202,NDB #,Foundation,"Oranges, raw, navels",0.91,140.0,g,"1 each,  2-7/8 dia",1.27
+746771,9202,NDB #,Foundation,"Oranges, raw, navels",0.91,165.0,g,"1 cup, sections no membranes",1.5
+746765,1227,NDB #,Foundation,"Cheese, dry white, queso seco",24.5,97.3,g,"1 cup, grated",23.8
+746767,1040,NDB #,Foundation,"Cheese, swiss",27.0,10.9,g,"1 slice, thin",2.94
+746767,1040,NDB #,Foundation,"Cheese, swiss",27.0,21.9,g,"1 slice, regular",5.91
+746769,11251,NDB #,Foundation,"Lettuce, cos or romaine, raw",1.24,581.0,g,"1 bunch",7.2
+746766,1036,NDB #,Foundation,"Cheese, ricotta, whole milk",7.81,129.0,g,"0.5 cup",10.1
+746766,1036,NDB #,Foundation,"Cheese, ricotta, whole milk",7.81,258.0,g,"1 cup",20.2
+746766,1036,NDB #,Foundation,"Cheese, ricotta, whole milk",7.81,64.6,g,"0.2 cup",5.04
+746764,11130,NDB #,Foundation,"Carrots, frozen, unprepared",0.81,100.0,g,"100 g",0.81
+746768,9094,NDB #,Foundation,"Figs, dried, uncooked",3.3,149.0,g,"1 cup",4.92
+746768,9094,NDB #,Foundation,"Figs, dried, uncooked",3.3,8.4,g,"1 each",0.277
+746762,13468,NDB #,Foundation,"Beef, short loin, porterhouse steak, separable lean only, trimmed to 1/8 fat, select, raw",22.7,525.0,g,"1 steak, raw",119.0
+746760,23362,NDB #,Foundation,"Beef, round, eye of round roast, boneless, separable lean only, trimmed to 0 fat, select, raw",23.4,690.0,g,"1 roast, raw",161.0
+746759,23385,NDB #,Foundation,"Beef, loin, top loin steak, boneless, lip-on, separable lean only, trimmed to 1/8 fat, choice, raw",22.8,284.0,g,"1 steak, raw",64.8
+746761,23359,NDB #,Foundation,"Beef, round, top round roast, boneless, separable lean only, trimmed to 0 fat, select, raw",23.7,788.0,g,"1 roast, raw",187.0
+746763,13236,NDB #,Foundation,"Beef, short loin, t-bone steak, bone-in, separable lean only, trimmed to 1/8 fat, choice, cooked, grilled",27.3,360.0,g,"1 steak, cooked",98.3
+746758,23377,NDB #,Foundation,"Beef, loin, tenderloin roast, separable lean only, boneless, trimmed to 0 fat, select, cooked, roasted",27.7,462.0,g,"1 roast, cooked",128.0
+335240,18075,NDB #,Foundation,"Bread, whole-wheat, commercially prepared",12.3,32.1,g,"1 slice",3.95
+334720,36408,NDB #,Foundation,"Restaurant, Latino, pupusas con frijoles (pupusas, bean)",5.59,126.0,g,"1 piece",7.04
+334628,36412,NDB #,Foundation,"Restaurant, Latino, tamale, pork",7.38,142.0,g,"1 piece",10.5
+334536,36602,NDB #,Foundation,"Restaurant, Chinese, fried rice, without meat",3.84,133.0,g,"1 cup",5.11
+334194,15121,NDB #,Foundation,"Fish, tuna, light, canned in water, drained solids",19.0,107.0,g,"1 can, drained solids",20.3
+334194,15121,NDB #,Foundation,"Fish, tuna, light, canned in water, drained solids",19.0,142.0,g,"1 can, total can contents",27.0
+333476,15066,NDB #,Foundation,"Fish, pollock, raw",12.3,177.0,g,"1 fillet",21.8
+333374,15033,NDB #,Foundation,"Fish, haddock, raw",16.3,176.0,g,"1 fillet",28.7
+333281,100193,NDB #,Foundation,"Tomatoes, canned, red, ripe, diced",0.84,245.0,g,"1 cup",2.06
+333008,100192,NDB #,Foundation,"Cookies, oatmeal, soft, with raisins",5.79,27.0,g,"1 cookie",1.56
+332791,9533,NDB #,Foundation,"Olives, green, Manzanilla, stuffed with pimiento",1.15,3.2,g,"1 olive",0.037
+332397,7028,NDB #,Foundation,"Ham, sliced, pre-packaged, deli meat (96%fat free, water added)",16.7,13.5,g,"1 slice",2.26
+332282,6931,NDB #,Foundation,"Sauce, pasta, spaghetti/marinara, ready-to-serve",1.41,135.0,g,"1 serving, 1/2 cup",1.9
+331960,5746,NDB #,Foundation,"Chicken, broiler or fryers, breast, skinless, boneless, meat only, cooked, braised",32.1,174.0,g,"1 piece",55.9
+331897,5671,NDB #,Foundation,"Chicken, broilers or fryers, drumstick, meat only, cooked, braised",23.9,94.7,g,"1 drumstick, without skin",22.6
+331897,5671,NDB #,Foundation,"Chicken, broilers or fryers, drumstick, meat only, cooked, braised",23.9,104.0,g,"1 drumstick, with skin",24.9
+330458,4047,NDB #,Foundation,"Oil, coconut",0.0,11.6,g,"1 tablespoon, liquid oil",0.0
+330415,1285,NDB #,Foundation,"Yogurt, Greek, strawberry, nonfat",8.06,150.0,g,"1 container, 5.3 oz",12.1
+330137,1256,NDB #,Foundation,"Yogurt, Greek, plain, nonfat",10.3,156.0,g,"1 container",16.1
+329716,1137,NDB #,Foundation,"Egg, yolk, dried",34.2,28.4,g,"1 oz",9.71
+329716,1137,NDB #,Foundation,"Egg, yolk, dried",34.2,67.0,g,"1 cup, sifted",22.9
+329716,1137,NDB #,Foundation,"Egg, yolk, dried",34.2,4.0,g,"1 tablespoon",1.37
+329596,1126,NDB #,Foundation,"Egg, yolk, raw, frozen, pasteurized",15.6,28.4,g,"1 oz",4.43
+329490,1133,NDB #,Foundation,"Egg, whole, dried",48.1,28.4,g,"1 oz",13.7
+329490,1133,NDB #,Foundation,"Egg, whole, dried",48.1,5.0,g,"1 tablespoon",2.4
+329490,1133,NDB #,Foundation,"Egg, whole, dried",48.1,85.0,g,"1 cup, sifted",40.9
+329370,1029,NDB #,Foundation,"Cheese, mozzarella, low moisture, part-skim",23.7,86.2,g,"1 cup",20.4
+328841,1015,NDB #,Foundation,"Cheese, cottage, lowfat, 2% milkfat",11.0,220.0,g,"1 cup",24.2
+328637,1009,NDB #,Foundation,"Cheese, cheddar",23.3,105.0,g,"1 cup",24.5
+328637,1009,NDB #,Foundation,"Cheese, cheddar",23.3,17.0,g,"1 slice",3.96
+327357,9191,NDB #,Foundation,"Nectarines, raw",1.06,143.0,g,"1 cup,  slices",1.52
+327357,9191,NDB #,Foundation,"Nectarines, raw",1.06,140.0,g,"1 serving, NLEA",1.48
+327357,9191,NDB #,Foundation,"Nectarines, raw",1.06,142.0,g,"1 each,  2-1/2 dia",1.5
+327357,9191,NDB #,Foundation,"Nectarines, raw",1.06,156.0,g,"1 each, 2-3/4 dia",1.65
+327357,9191,NDB #,Foundation,"Nectarines, raw",1.06,129.0,g,"1 each, 2-1/3 dia",1.37
+327046,9148,NDB #,Foundation,"Kiwifruit, green, raw",1.06,100.0,g,"100 g",1.06
+326698,2046,NDB #,Foundation,"Mustard, prepared, yellow",4.25,6.0,g,"1 teaspoon",0.255
+326698,2046,NDB #,Foundation,"Mustard, prepared, yellow",4.25,249.0,g,"1 cup",10.6
+326196,11236,NDB #,Foundation,"Kale, frozen, cooked, boiled, drained, without salt",2.94,118.0,g,"1 cup, cooked",3.47
+325871,18069,NDB #,Foundation,"Bread, white, commercially prepared",9.43,27.3,g,"1 slice",2.57
+325524,12537,NDB #,Foundation,"Seeds, sunflower seed kernels, dry roasted, with salt added",21.0,127.0,g,"1 cup",26.7
+325430,9236,NDB #,Foundation,"Peaches, yellow, raw",0.91,147.0,g,"1 serving, NLEA ",1.34
+325430,9236,NDB #,Foundation,"Peaches, yellow, raw",0.91,161.0,g,"1 fruit, medium (2-2/3 dia)",1.46
+325430,9236,NDB #,Foundation,"Peaches, yellow, raw",0.91,225.0,g,"1 fruit, extra large (3 dia)",2.05
+325430,9236,NDB #,Foundation,"Peaches, yellow, raw",0.91,173.0,g,"1 fruit, large (2-3/4 dia)",1.57
+325430,9236,NDB #,Foundation,"Peaches, yellow, raw",0.91,154.0,g,"1 cup, slices with skin",1.4
+325430,9236,NDB #,Foundation,"Peaches, yellow, raw",0.91,147.0,g,"1 fruit, small (2-1/2 dia)",1.34
+325198,1042,NDB #,Foundation,"Cheese, pasteurized process, American, vitamin D fortified",18.0,20.6,g,"1 slice",3.71
+325287,9123,NDB #,Foundation,"Grapefruit juice, white, canned or bottled, unsweetened",0.55,257.0,g,"1 cup",1.41
+325036,1032,NDB #,Foundation,"Cheese, parmesan, grated",29.6,7.6,g,"1 tablespoon",2.25
+324860,16098,NDB #,Foundation,"Peanut butter, smooth style, with salt",22.5,32.0,g,"2 tablespoon",7.2
+324860,16098,NDB #,Foundation,"Peanut butter, smooth style, with salt",22.5,258.0,g,"1 cup",58.0
+324653,11937,NDB #,Foundation,"Pickles, cucumber, dill or kosher dill",0.48,40.4,g,"1 spear",0.194
+324317,11296,NDB #,Foundation,"Onion rings, breaded, par fried, frozen, prepared, heated in oven",4.52,20.2,g,"1 piece",0.913
+323793,1173,NDB #,Foundation,"Egg, white, dried",79.9,107.0,g,"1 cup, sifted",85.5
+323793,1173,NDB #,Foundation,"Egg, white, dried",79.9,7.0,g,"1 tablespoon",5.59
+323697,1172,NDB #,Foundation,"Egg, white, raw, frozen, pasteurized",10.1,28.4,g,"1 oz",2.87
+323604,1171,NDB #,Foundation,"Egg, whole, raw, frozen, pasteurized",12.3,28.4,g,"1 oz",3.49
+323505,11233,NDB #,Foundation,"Kale, raw",2.92,20.6,g,"1 cup, pieces of ~1",0.602
+323294,12563,NDB #,Foundation,"Nuts, almonds, dry roasted, with salt added",20.4,135.0,g,"1 cup, whole",27.5
+323121,7022,NDB #,Foundation,"Frankfurter, beef, unheated",11.7,48.6,g,"1 piece",5.69
+321611,11056,NDB #,Foundation,"Beans, snap, green, canned, regular pack, drained solids",1.04,129.0,g,"1 cup, drained",1.34
+321360,100147,NDB #,Foundation,"Tomatoes, grape, raw",0.83,152.0,g,"1 cup",1.26
+321360,100147,NDB #,Foundation,"Tomatoes, grape, raw",0.83,49.7,g,"5 tomatoes",0.413
+321358,16158,NDB #,Foundation,"Hummus, commercial",7.35,33.9,g,"2 tablespoon",2.49

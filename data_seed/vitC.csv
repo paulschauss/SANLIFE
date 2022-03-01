@@ -1,0 +1,68 @@
+fdcId,identifier,identifierType,foodType,foodDescription,value,foodWeight,valueUnit,foodMeasure,measureValue
+2003592,9130,NDB #,Foundation,"Grape juice, purple, with added vitamin C, from concentrate, shelf stable",0.0,100.0,g,"100 g",0.0
+2003591,9209,NDB #,Foundation,"Orange juice, no pulp, not fortified, from concentrate, refrigerated",0.0,100.0,g,"100 g",0.0
+2003594,43382,NDB #,Foundation,"Cranberry juice, not fortified, from concentrate, shelf stable",0.0,100.0,g,"100 g",0.0
+2003593,100266,NDB #,Foundation,"Grape juice, white, with added vitamin C, from concentrate, shelf stable",0.0,100.0,g,"100 g",0.0
+2003595,100267,NDB #,Foundation,"Grapefruit juice, red, not fortified, not from concentrate, refrigerated",0.0,100.0,g,"100 g",0.0
+2003596,11540,NDB #,Foundation,"Tomato juice, with added ingredients, from concentrate, shelf stable",0.0,100.0,g,"100 g",0.0
+2003590,9400,NDB #,Foundation,"Apple juice, with added vitamin C, from concentrate, shelf stable",0.0,100.0,g,"100 g",0.0
+2003597,9206,NDB #,Foundation,"Orange juice, no pulp, not fortified, not from concentrate, refrigerated",0.0,100.0,g,"100 g",0.0
+1999634,100261,NDB #,Foundation,"Tomato, roma",0.0,100.0,g,"100 g",0.0
+1999633,11457,NDB #,Foundation,"Spinach, mature",0.0,100.0,g,"100 g",0.0
+1999632,100260,NDB #,Foundation,"Spinach, baby",0.0,100.0,g,"100 g",0.0
+1105314,9040,NDB #,Foundation,"Bananas, ripe and slightly ripe, raw",12.3,115.0,g,"1 Banana, Peeled",14.1
+1105073,100254,NDB #,Foundation,"Bananas, overripe, raw",9.7,110.0,g,"1 Banana, Peeled",10.7
+1104647,11215,NDB #,Foundation,"Garlic, raw",10.0,100.0,g,"100 g",10.0
+790646,100253,NDB #,Foundation,"Onions, yellow, raw",8.2,143.0,g,"1 Onion, Edible",11.7
+790577,100252,NDB #,Foundation,"Onions, red, raw",8.1,197.0,g,"1 Onion, Edible",16.0
+747447,11090,NDB #,Foundation,"Broccoli, raw",91.3,76.0,g,"1 cup, chopped",69.4
+747448,9316,NDB #,Foundation,"Strawberries, raw",56.0,100.0,g,"100 g",56.0
+746779,7954,NDB #,Foundation,"Sausage, breakfast sausage, beef, pre-cooked, unprepared",19.2,18.6,g,"1 link",3.57
+746774,36622,NDB #,Foundation,"Restaurant, Chinese, sweet and sour pork",2.3,41.8,g,"3 pieces",0.961
+746774,36622,NDB #,Foundation,"Restaurant, Chinese, sweet and sour pork",2.3,611.0,g,"1 order",14.1
+746769,11251,NDB #,Foundation,"Lettuce, cos or romaine, raw",4.6,581.0,g,"1 bunch",26.7
+746771,9202,NDB #,Foundation,"Oranges, raw, navels",59.1,140.0,g,"1 each,  2-7/8 dia",82.7
+746771,9202,NDB #,Foundation,"Oranges, raw, navels",59.1,165.0,g,"1 cup, sections no membranes",97.5
+746773,9412,NDB #,Foundation,"Pears, raw, bartlett",4.4,148.0,g,"1 each, small",6.51
+746773,9412,NDB #,Foundation,"Pears, raw, bartlett",4.4,230.0,g,"1 each, large",10.1
+746773,9412,NDB #,Foundation,"Pears, raw, bartlett",4.4,178.0,g,"1 each, medium",7.83
+746773,9412,NDB #,Foundation,"Pears, raw, bartlett",4.4,140.0,g,"1 cup, slices",6.16
+746770,9181,NDB #,Foundation,"Melons, cantaloupe, raw",10.9,55.0,g,"1 wedge, small (1/8 of small melon)",6.0
+746770,9181,NDB #,Foundation,"Melons, cantaloupe, raw",10.9,552.0,g,"1 each, medium (about 5 dia)",60.2
+746770,9181,NDB #,Foundation,"Melons, cantaloupe, raw",10.9,156.0,g,"1 cup, diced",17.0
+746770,9181,NDB #,Foundation,"Melons, cantaloupe, raw",10.9,138.0,g,"10 pieces, balls",15.0
+746770,9181,NDB #,Foundation,"Melons, cantaloupe, raw",10.9,160.0,g,"1 cup, cubes",17.4
+746770,9181,NDB #,Foundation,"Melons, cantaloupe, raw",10.9,814.0,g,"1 each, large (about 6-1/2 dia)",88.7
+746770,9181,NDB #,Foundation,"Melons, cantaloupe, raw",10.9,441.0,g,"1 each, small (about 4-1/4 dia)",48.1
+746770,9181,NDB #,Foundation,"Melons, cantaloupe, raw",10.9,102.0,g,"1 wedge, large (1/8 of large melon)",11.1
+746770,9181,NDB #,Foundation,"Melons, cantaloupe, raw",10.9,69.0,g,"1 wedge, medium (1/8 of medium melon)",7.52
+746768,9094,NDB #,Foundation,"Figs, dried, uncooked",1.2,149.0,g,"1 cup",1.79
+746768,9094,NDB #,Foundation,"Figs, dried, uncooked",1.2,8.4,g,"1 each",0.101
+746764,11130,NDB #,Foundation,"Carrots, frozen, unprepared",2.2,100.0,g,"100 g",2.2
+333476,15066,NDB #,Foundation,"Fish, pollock, raw",0.0,177.0,g,"1 fillet",0.0
+332791,9533,NDB #,Foundation,"Olives, green, Manzanilla, stuffed with pimiento",0.0,3.2,g,"1 olive",0.0
+330415,1285,NDB #,Foundation,"Yogurt, Greek, strawberry, nonfat",0.2,150.0,g,"1 container, 5.3 oz",0.3
+327357,9191,NDB #,Foundation,"Nectarines, raw",2.9,143.0,g,"1 cup,  slices",4.15
+327357,9191,NDB #,Foundation,"Nectarines, raw",2.9,140.0,g,"1 serving, NLEA",4.06
+327357,9191,NDB #,Foundation,"Nectarines, raw",2.9,142.0,g,"1 each,  2-1/2 dia",4.12
+327357,9191,NDB #,Foundation,"Nectarines, raw",2.9,156.0,g,"1 each, 2-3/4 dia",4.52
+327357,9191,NDB #,Foundation,"Nectarines, raw",2.9,129.0,g,"1 each, 2-1/3 dia",3.74
+327046,9148,NDB #,Foundation,"Kiwifruit, green, raw",74.7,100.0,g,"100 g",74.7
+326698,2046,NDB #,Foundation,"Mustard, prepared, yellow",0.4,6.0,g,"1 teaspoon",0.024
+326698,2046,NDB #,Foundation,"Mustard, prepared, yellow",0.4,249.0,g,"1 cup",0.996
+326196,11236,NDB #,Foundation,"Kale, frozen, cooked, boiled, drained, without salt",17.8,118.0,g,"1 cup, cooked",21.0
+325524,12537,NDB #,Foundation,"Seeds, sunflower seed kernels, dry roasted, with salt added",0.0,127.0,g,"1 cup",0.0
+325430,9236,NDB #,Foundation,"Peaches, yellow, raw",4.1,147.0,g,"1 serving, NLEA ",6.03
+325430,9236,NDB #,Foundation,"Peaches, yellow, raw",4.1,161.0,g,"1 fruit, medium (2-2/3 dia)",6.6
+325430,9236,NDB #,Foundation,"Peaches, yellow, raw",4.1,225.0,g,"1 fruit, extra large (3 dia)",9.22
+325430,9236,NDB #,Foundation,"Peaches, yellow, raw",4.1,173.0,g,"1 fruit, large (2-3/4 dia)",7.09
+325430,9236,NDB #,Foundation,"Peaches, yellow, raw",4.1,154.0,g,"1 cup, slices with skin",6.31
+325430,9236,NDB #,Foundation,"Peaches, yellow, raw",4.1,147.0,g,"1 fruit, small (2-1/2 dia)",6.03
+325287,9123,NDB #,Foundation,"Grapefruit juice, white, canned or bottled, unsweetened",39.4,257.0,g,"1 cup",101.0
+324653,11937,NDB #,Foundation,"Pickles, cucumber, dill or kosher dill",2.1,40.4,g,"1 spear",0.848
+324317,11296,NDB #,Foundation,"Onion rings, breaded, par fried, frozen, prepared, heated in oven",1.6,20.2,g,"1 piece",0.323
+323505,11233,NDB #,Foundation,"Kale, raw",93.4,20.6,g,"1 cup, pieces of ~1",19.2
+323294,12563,NDB #,Foundation,"Nuts, almonds, dry roasted, with salt added",0.0,135.0,g,"1 cup, whole",0.0
+321360,100147,NDB #,Foundation,"Tomatoes, grape, raw",27.2,152.0,g,"1 cup",41.3
+321360,100147,NDB #,Foundation,"Tomatoes, grape, raw",27.2,49.7,g,"5 tomatoes",13.5
+321358,16158,NDB #,Foundation,"Hummus, commercial",0.0,33.9,g,"2 tablespoon",0.0
