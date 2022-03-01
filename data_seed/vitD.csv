@@ -1,0 +1,46 @@
+fdcId,identifier,identifierType,foodType,foodDescription,value,foodWeight,valueUnit,foodMeasure,measureValue
+2003604,100265,NDB #,Foundation,"Mushroom, pioppini",0.0,100.0,g,"100 g",0.0
+2003603,100264,NDB #,Foundation,"Mushroom, beech",14.8,100.0,g,"100 g",14.8
+2003602,11993,NDB #,Foundation,"Mushroom, maitake",64.0,100.0,g,"100 g",64.0
+2003601,11266,NDB #,Foundation,"Mushroom, crimini",0.0,100.0,g,"100 g",0.0
+2003600,11950,NDB #,Foundation,"Mushroom, enoki",0.0,100.0,g,"100 g",0.0
+2003599,100263,NDB #,Foundation,"Mushroom, king oyster",2.8,100.0,g,"100 g",2.8
+2003598,11243,NDB #,Foundation,"Mushroom, portabella",0.0,100.0,g,"100 g",0.0
+1999631,14091,NDB #,Foundation,"Almond milk, unsweetened, plain, shelf stable",37.1,100.0,g,"100 g",37.1
+1999630,16222,NDB #,Foundation,"Soy milk, unsweetened, plain, shelf stable",27.2,100.0,g,"100 g",27.2
+1999629,11260,NDB #,Foundation,"Mushrooms, white button",0.868,100.0,g,"100 g",0.868
+1999628,11238,NDB #,Foundation,"Mushrooms, shiitake",2.25,100.0,g,"100 g",2.25
+1999627,11987,NDB #,Foundation,"Mushroom, oyster",1.62,100.0,g,"100 g",1.62
+1999626,100259,NDB #,Foundation,"Mushroom, lion's mane",0.848,100.0,g,"100 g",0.848
+790508,1001,NDB #,Foundation,"Butter, stick, salted",16.0,100.0,g,"100 g",16.0
+748967,1123,NDB #,Foundation,"Eggs, Grade A, Large, egg whole",98.4,50.3,g,"1 egg, whole without shell",49.5
+746782,1077,NDB #,Foundation,"Milk, whole, 3.25% milkfat, with added vitamin D",38.4,249.0,g,"1 cup",95.6
+746778,1079,NDB #,Foundation,"Milk, reduced fat, fluid, 2% milkfat, with added vitamin A and vitamin D",45.2,245.0,g,"1 cup",111.0
+746776,1085,NDB #,Foundation,"Milk, nonfat, fluid, with added vitamin A and vitamin D (fat free or skim)",44.0,246.0,g,"1 cup",108.0
+746772,1082,NDB #,Foundation,"Milk, lowfat, fluid, 1% milkfat, with added vitamin A and vitamin D",42.4,246.0,g,"1 cup",104.0
+746765,1227,NDB #,Foundation,"Cheese, dry white, queso seco",73.3,97.3,g,"1 cup, grated",71.3
+746767,1040,NDB #,Foundation,"Cheese, swiss",0.0,10.9,g,"1 slice, thin",0.0
+746767,1040,NDB #,Foundation,"Cheese, swiss",0.0,21.9,g,"1 slice, regular",0.0
+746761,23359,NDB #,Foundation,"Beef, round, top round roast, boneless, separable lean only, trimmed to 0 fat, select, raw",0.0,788.0,g,"1 roast, raw",0.0
+746759,23385,NDB #,Foundation,"Beef, loin, top loin steak, boneless, lip-on, separable lean only, trimmed to 1/8 fat, choice, raw",0.0,284.0,g,"1 steak, raw",0.0
+334536,36602,NDB #,Foundation,"Restaurant, Chinese, fried rice, without meat",0.0,133.0,g,"1 cup",0.0
+334194,15121,NDB #,Foundation,"Fish, tuna, light, canned in water, drained solids",47.0,107.0,g,"1 can, drained solids",50.3
+334194,15121,NDB #,Foundation,"Fish, tuna, light, canned in water, drained solids",47.0,142.0,g,"1 can, total can contents",66.7
+333476,15066,NDB #,Foundation,"Fish, pollock, raw",8.0,177.0,g,"1 fillet",14.2
+333374,15033,NDB #,Foundation,"Fish, haddock, raw",18.0,176.0,g,"1 fillet",31.7
+331897,5671,NDB #,Foundation,"Chicken, broilers or fryers, drumstick, meat only, cooked, braised",2.0,94.7,g,"1 drumstick, without skin",1.89
+331897,5671,NDB #,Foundation,"Chicken, broilers or fryers, drumstick, meat only, cooked, braised",2.0,104.0,g,"1 drumstick, with skin",2.08
+330415,1285,NDB #,Foundation,"Yogurt, Greek, strawberry, nonfat",40.0,150.0,g,"1 container, 5.3 oz",60.0
+330137,1256,NDB #,Foundation,"Yogurt, Greek, plain, nonfat",0.0,156.0,g,"1 container",0.0
+329716,1137,NDB #,Foundation,"Egg, yolk, dried",628.0,28.4,g,"1 oz",178.0
+329716,1137,NDB #,Foundation,"Egg, yolk, dried",628.0,67.0,g,"1 cup, sifted",421.0
+329716,1137,NDB #,Foundation,"Egg, yolk, dried",628.0,4.0,g,"1 tablespoon",25.1
+329596,1126,NDB #,Foundation,"Egg, yolk, raw, frozen, pasteurized",231.0,28.4,g,"1 oz",65.6
+329490,1133,NDB #,Foundation,"Egg, whole, dried",388.0,28.4,g,"1 oz",110.0
+329490,1133,NDB #,Foundation,"Egg, whole, dried",388.0,5.0,g,"1 tablespoon",19.4
+329490,1133,NDB #,Foundation,"Egg, whole, dried",388.0,85.0,g,"1 cup, sifted",330.0
+325198,1042,NDB #,Foundation,"Cheese, pasteurized process, American, vitamin D fortified",301.0,20.6,g,"1 slice",62.0
+323793,1173,NDB #,Foundation,"Egg, white, dried",0.0,107.0,g,"1 cup, sifted",0.0
+323793,1173,NDB #,Foundation,"Egg, white, dried",0.0,7.0,g,"1 tablespoon",0.0
+323604,1171,NDB #,Foundation,"Egg, whole, raw, frozen, pasteurized",91.0,28.4,g,"1 oz",25.8
+323697,1172,NDB #,Foundation,"Egg, white, raw, frozen, pasteurized",0.0,28.4,g,"1 oz",0.0
