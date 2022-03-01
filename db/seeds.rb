@@ -1,10 +1,9 @@
 require "csv"
 
-Illness.destroy_all
-IllnessNutrient.destroy_all
-NutrientFood.destroy_all
-Nutrient.destroy_all
 User.destroy_all
+Illness.destroy_all
+Food.destroy_all
+Nutrient.destroy_all
 
 puts "Data destroyed"
 
@@ -33,6 +32,7 @@ illness_names = [
 ]
 
 illness_names.each do |name|
+  puts "adding #{name} ..."
   illness = Illness.create!(name: name)
 
   CSV.foreach("data_seed/illness_nutrients.csv", headers: :first_row, header_converters: :symbol) do |row|
@@ -59,16 +59,21 @@ nutrient_data = {
 "Folate" => 'folate.csv'
 }
 
+puts "\n\n"
+
 nutrient_data.each do |name, file|
+  puts "adding #{name} ..."
   nutrient = Nutrient.create!(name: name)
 
   CSV.foreach("data_seed/#{file}", headers: :first_row, header_converters: :symbol) do |row|
-    food = Food.find_or_create_by(name: row[:fooddescription])
+    row[:fooddescription].split(',').each do |food|
+      food = Food.find_or_create_by(name: food)
 
-    NutrientFood.create!(
-      food: food,
-      nutrient: nutrient,
-      measure_value: row[:measurevalue]
-    )
+      NutrientFood.create!(
+        food: food,
+        nutrient: nutrient,
+        measure_value: row[:measurevalue]
+      )
+    end
   end
 end
