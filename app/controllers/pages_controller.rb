@@ -3,4 +3,11 @@ class PagesController < ApplicationController
 
   def home
   end
+
+  def dashboard
+  end
+
+  def preferences
+    @illnesses = Illness.all
+  end
 end
