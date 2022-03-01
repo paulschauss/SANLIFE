@@ -2,5 +2,9 @@
 
 
 <%= @illnesses.each do |illness| %>
-<p><%= illness %></p>
+  <p><%= illness.name %></p>
 <% end %>
+
+
+<!-- faire une card avec link_to Post vers user_illnesses (method create) en ajax pour chaque card de illness --->
+<!-- faire une card avec link_to delete vers user_illnesses (method destroy) en ajax pour chaque card de illness --->
