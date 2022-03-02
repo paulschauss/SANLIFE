@@ -63,10 +63,10 @@ puts "\n\n"
 
 nutrient_data.each do |name, file|
   puts "adding #{name} ..."
-  nutrient = Nutrient.create!(name: name)
+  nutrient = Nutrient.find_or_create_by(name: name)
 
   CSV.foreach("data_seed/#{file}", headers: :first_row, header_converters: :symbol) do |row|
-    row[:fooddescription].split(',').each do |food|
+     row[:fooddescription].split(',').each do |food|
       food = Food.find_or_create_by(name: food)
 
       NutrientFood.create!(
@@ -77,3 +77,8 @@ nutrient_data.each do |name, file|
     end
   end
 end
+
+# Marie seeding user_illnesses - to delete when Paul is finished.
+polly = User.create!(first_name: 'Polly', last_name: 'DELORI', email: 'polly@sanlife.me', password: '123456')
+user_illness_polly_energy = UserIllness.create!(user: polly, illness: Illness.first)
+puts "creating Polly user_illness"

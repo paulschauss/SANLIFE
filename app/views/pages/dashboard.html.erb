@@ -1,0 +1,12 @@
+<h1>My results</h1>
+
+<h5>Displaying health concerns:
+<% @user_illnesses.each do |user_illness| %>
+  <%= user_illness.illness.name %>
+<% end %></h5>
+
+<h5>Displaying associated nutrients:
+<% @user_illnesses.each do |user_illness|%>
+  <% illness_nutrient = IllnessNutrient.find_by_illness_id(user_illness.illness.id) %>
+  <%= illness_nutrient.nutrient.name %>
+  <%end%></h5>
