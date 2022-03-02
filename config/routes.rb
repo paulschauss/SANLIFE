@@ -24,6 +24,5 @@ Rails.application.routes.draw do
   resources :user_illnesses, only: [] do
     post :add, on: :member
     delete :remove, on: :member
-  #   resources :user_illnesses, only: %i[add remove]
   end
 end
