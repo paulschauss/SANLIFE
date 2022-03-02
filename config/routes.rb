@@ -8,7 +8,9 @@ Rails.application.routes.draw do
   root to: 'pages#home'
 
   resources :users, only: [:show]
-  resources :foods, only: [:index]
+  resources :foods, only: [:index] do
+    get :refresh, on: :member
+  end
 
   resources :users do
     member do

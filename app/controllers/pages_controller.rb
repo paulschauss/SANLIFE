@@ -7,6 +7,7 @@ class PagesController < ApplicationController
   end
 
   def dashboard
+    @user_illnesses = UserIllness.all
   end
 
   def preferences
