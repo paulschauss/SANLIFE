@@ -1,9 +1,5 @@
 <h1>Your nutritional plan this week</h1>
 
-<h2><%= NutrientFood.first.food.name %></h2>
-<h2><%= NutrientFood.first.nutrient.name %></h2>
-
-
 <%= link_to "test", foods_path(nutrient_ids: Nutrient.all.sample(4).map(&:id)) %>
 
 
@@ -14,7 +10,7 @@
     <li>
       <%= nutrient.name %>
       <ul>
-          <% nutrient.foods.first(4).each do |food| %>
+          <% nutrient.foods.sample(4).each do |food| %>
           <li>
             <%= food.name %>
           </li>

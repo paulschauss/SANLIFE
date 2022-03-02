@@ -66,15 +66,14 @@ nutrient_data.each do |name, file|
   nutrient = Nutrient.find_or_create_by(name: name)
 
   CSV.foreach("data_seed/#{file}", headers: :first_row, header_converters: :symbol) do |row|
-     row[:fooddescription].split(',').each do |food|
-      food = Food.find_or_create_by(name: food)
+    food_name = row[:fooddescription].split(',').first
+    food = Food.find_or_create_by(name: food_name)
 
-      NutrientFood.create!(
-        food: food,
-        nutrient: nutrient,
-        measure_value: row[:measurevalue]
-      )
-    end
+    NutrientFood.create!(
+      food: food,
+      nutrient: nutrient,
+      measure_value: row[:measurevalue]
+    )
   end
 end
 
