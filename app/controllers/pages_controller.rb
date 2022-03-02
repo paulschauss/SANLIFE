@@ -12,6 +12,8 @@ class PagesController < ApplicationController
 
   def preferences
     @illnesses = Illness.all
+
+    @nutrients = current_user.nutrients
   end
 
   private
