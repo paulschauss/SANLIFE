@@ -1,21 +1,27 @@
-<h1>Your nutritional plan this week</h1>
+<div class="container">
 
-<%= link_to "test", foods_path(nutrient_ids: Nutrient.all.sample(4).map(&:id)) %>
+  <h1>Your nutritional plan this week</h1>
+
+  <%= link_to "test", foods_path(nutrient_ids: Nutrient.all.sample(4).map(&:id)) %>
 
 
-<hr>
+  <hr>
 
-<ul>
-  <% @nutrients.each do |nutrient| %>
-    <li>
-      <%= nutrient.name %>
-      <ul>
-          <% nutrient.foods.sample(4).each do |food| %>
-          <li>
-            <%= food.name %>
-          </li>
+
+    <% @nutrients.each do |nutrient| %>
+      <div class="nutrient-food-row">
+        <h2 class="nutrient-food-item"><strong><%= nutrient.name %></strong></h2>
+        <% nutrient.foods.sample(4).each do |food| %>
+          <a class="nutrient-food-item card2" href="#">
+            <p class="small"><%= food.name %></p>
+            <div class="go-corner" href="#">
+              <div class="go-arrow">
+                →
+              </div>
+            </div>
+          </a>
         <% end %>
-      </ul>
-    </li>
-  <% end %>
-</ul>
+      </div>
+    <% end %>
+
+</div>

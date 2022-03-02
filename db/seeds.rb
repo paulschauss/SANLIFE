@@ -76,8 +76,3 @@ nutrient_data.each do |name, file|
     )
   end
 end
-
-# Marie seeding user_illnesses - to delete when Paul is finished.
-polly = User.create!(first_name: 'Polly', last_name: 'DELORI', email: 'polly@sanlife.me', password: '123456')
-user_illness_polly_energy = UserIllness.create!(user: polly, illness: Illness.first)
-puts "creating Polly user_illness"
