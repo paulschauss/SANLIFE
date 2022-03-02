@@ -1,10 +1,14 @@
 class UserIllnessesController < ApplicationController
-  def create
-    raise
-    # params user_illness => illness_id
-    # @user_illness =  UserIllness.create(params(user_illness))
-    # @user_illness.user = current_user
-    # if save
-    # render partial
+  def add
+    @illness = Illness.find(params[:id])
+    @user_illness = UserIllness.create(user: current_user, illness: @illness)
+    render partial: 'user_preferences', locals: { illness: @illness }
+  end
+
+  def remove
+    @illness = Illness.find(params[:id])
+    @user_illness = UserIllness.find_by(user: current_user, illness: @illness)
+    p @user_illness
+    @user_illness.destroy
   end
 end

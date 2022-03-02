@@ -1,10 +1,8 @@
-<p>hello </p>
-
-
-<%= @illnesses.each do |illness| %>
-  <p><%= illness.name %></p>
-<% end %>
-
-
-<!-- faire une card avec link_to Post vers user_illnesses (method create) en ajax pour chaque card de illness --->
-<!-- faire une card avec link_to delete vers user_illnesses (method destroy) en ajax pour chaque card de illness --->
+<div class="container">
+  <h1>preferences</h1>
+  <div class="row justify-content-center">
+    <% @illnesses.each do |illness| %>
+      <%= render "user_illnesses/user_preferences", illness: illness %>
+    <% end %>
+  </div>
+</div>
