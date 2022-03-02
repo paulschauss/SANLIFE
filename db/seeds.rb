@@ -13,7 +13,7 @@ puts "Amine user created"
 marie = User.create!(first_name: 'Marie', last_name: 'DELORI', email: 'marie@sanlife.me', password: '123456')
 puts "Marie user created"
 
-paul = User.create!(first_name: 'Paul', last_name: 'SCHAUSS', email: 'paul@sanlife.me', password: '123456')
+paul = User.create!(first_name: 'Paul', last_name: 'SCHAUSS', email: 'paul@localhost.me', password: '123456')
 puts "Paul user created"
 
 illness_names = [

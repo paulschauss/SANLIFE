@@ -1,6 +1,19 @@
-<p>hello </p>
-
-
-<%= @illnesses.each do |illness| %>
-<p><%= illness %></p>
-<% end %>
+<div class="container">
+  <h1>preferences</h1>
+  <div class="row justify-content-center">
+    <% @illnesses.each do |illness| %>
+      <div class="btn col-3 m-2"
+            role="button"
+            data-bs-toggle="button"
+            data-controller="illness-preferences"
+            data-illness-preferences-target="button"
+            data-illness-preferences-active-value="<%= current_user.illnesses.where(id: illness.id).exists? %>"
+            data-illness-preferences-urladd-value="<%= add_illness_path(illness) %>"
+            data-illness-preferences-urlremove-value="<%= remove_illness_path(illness) %>"
+            data-action="click->illness-preferences#toggle"
+            >
+        <%= illness.name %>
+      </div>
+    <% end %>
+  </div>
+</div>
