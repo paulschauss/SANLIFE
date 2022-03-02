@@ -7,6 +7,6 @@ class UsersController < ApplicationController
   private
 
   def verify_user_setup
-    redirect_to dashboard_path, notice: "finisser" if current_user.user_illnesses.empty?
+    redirect_to preferences_path, notice: "finisser" if current_user.user_illnesses.empty?
   end
 end

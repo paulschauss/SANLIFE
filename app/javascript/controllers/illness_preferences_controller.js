@@ -1,4 +1,6 @@
 import { Controller } from "stimulus"
+import { csrfToken } from "@rails/ujs";
+
 
 export default class extends Controller {
   static targets = [ "button" ]
@@ -21,7 +23,12 @@ export default class extends Controller {
   syncServer() {
     const url = this.activeValue ? this.urladdValue : this.urlremoveValue
     const verb = this.activeValue ? 'POST' : 'DELETE'
-    fetch(url, { method: verb })
+    fetch(url, {
+      method: verb,
+      headers: {
+        "X-CSRF-Token": csrfToken()
+      }
+     })
   }
 
   connect() {
