@@ -24,6 +24,7 @@
   font-weight: bold;
 }
 
+
 .go-corner {
   display: flex;
   align-items: center;
@@ -43,6 +44,11 @@
   margin-right: -4px;
   color: white;
   font-family: courier, sans;
+
+  &:hover {
+    transition: all 0.2s ease-out;
+    transform: scale(1.2);
+  }
 }
 
 .card2 {
@@ -59,32 +65,32 @@
   overflow: hidden;
   border: 1px solid #f2f8f9;
 
-  &:hover {
-    transition: all 0.2s ease-out;
-    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
-    top: -4px;
-    border: 1px solid #cccccc;
-    background-color: white;
-  }
+  // &:hover {
+  //   transition: all 0.2s ease-out;
+  //   box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+  //   top: -4px;
+  //   border: 1px solid #cccccc;
+  //   background-color: white;
+  // }
 
-  &:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: -16px;
-    right: -16px;
-    background: #00838d;
-    height: 32px;
-    width: 32px;
-    border-radius: 32px;
-    transform: scale(2);
-    transform-origin: 50% 50%;
-    transition: transform 0.15s ease-out;
-  }
+  // &:before {
+  //   content: "";
+  //   position: absolute;
+  //   z-index: -1;
+  //   top: -16px;
+  //   right: -16px;
+  //   background: #00838d;
+  //   height: 32px;
+  //   width: 32px;
+  //   border-radius: 32px;
+  //   transform: scale(2);
+  //   transform-origin: 50% 50%;
+  //   transition: transform 0.15s ease-out;
+  // }
 
-  &:hover:before {
-    transform: scale(2.15);
-  }
+  // &:hover:before {
+  //   transform: scale(2.15);
+  // }
 
   &.small {
     font-size: 14px;
