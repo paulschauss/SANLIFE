@@ -1,13 +1,12 @@
-<div class="container">
+<div class="container" data-controller="illness-preferences-results">
   <h1>preferences</h1>
   <div class="row justify-content-center">
     <% @illnesses.each do |illness| %>
       <%= render "user_illnesses/user_preferences", illness: illness %>
     <% end %>
   </div>
-  <div class="vitamins">
-    <% @nutrients.each do |nutrient| %>
-        <p><%= nutrient.name %></p>
-    <% end %>
+  <div id="vitamins">
+    <%= render "vitamins_result", nutrients: @nutrients %>
   </div>
+
 </div>

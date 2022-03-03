@@ -1,0 +1,5 @@
+  <div data-illness-preferences-results-target="results" data-action="refreshResult@window->illness-preferences-results#refresh"> <%# a mettre dans une partial%>
+    <% @nutrients.each do |nutrient| %>
+        <p><%= nutrient.name %></p>
+    <% end %>
+  </div>

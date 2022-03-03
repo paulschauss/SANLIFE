@@ -8,7 +8,6 @@ class UserIllnessesController < ApplicationController
   def remove
     @illness = Illness.find(params[:id])
     @user_illness = UserIllness.find_by(user: current_user, illness: @illness)
-    p @user_illness
     @user_illness.destroy
   end
 end

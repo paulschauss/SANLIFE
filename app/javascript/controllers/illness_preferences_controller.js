@@ -28,7 +28,14 @@ export default class extends Controller {
       headers: {
         "X-CSRF-Token": csrfToken()
       }
-     })
+    }).then(x => {
+      // refreshResults
+      console.log('je suis bine la')
+      const event = new CustomEvent("refreshResult")
+      console.log(event)
+      window.dispatchEvent(event)
+
+    })
   }
 
   connect() {
