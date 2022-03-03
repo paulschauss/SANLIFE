@@ -10,8 +10,6 @@ export default class extends Controller {
   }
 
   refresh() {
-    console.log("je dois refresh le result")
-
     const url = '/illness_nutrients'
 
     const verb = "GET"

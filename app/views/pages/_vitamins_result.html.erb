@@ -8,7 +8,8 @@
     <% @nutrients.each do |nutrient| %>
       <div class="nutrient-food-row">
         <h2 class="nutrient"><strong><%= nutrient.name %></strong></h2>
-        <% nutrient.foods.sample(4).each do |food| %>
+        <% ids = nutrient.nutrient_foods.order(measure_value: :desc).pluck(:food_id) %>
+        <% Food.find(ids).first(4).each do |food| %>
           <%= render "foods/food_cards", food: food %>
         <% end %>
       </div>
