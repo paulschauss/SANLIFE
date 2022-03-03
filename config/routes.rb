@@ -25,4 +25,6 @@ Rails.application.routes.draw do
     post :add, on: :member
     delete :remove, on: :member
   end
+
+  resources :illness_nutrients, only: [:index]
 end
