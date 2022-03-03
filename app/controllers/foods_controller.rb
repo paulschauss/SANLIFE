@@ -4,6 +4,6 @@ class FoodsController < ApplicationController
   end
 
   def refresh
-    render partial: 'food_cards', locals: { food: Food.all.sample }, formats: [:html]
+    render partial: 'food_cards', locals: { food: Food.all }, formats: [:html]
   end
 end
