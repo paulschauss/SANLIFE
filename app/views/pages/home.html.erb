@@ -2,10 +2,3 @@
   <h1><strong>My Illness 🤒</strong></h1>
   <p>(Pages#home)</p>
 </div>
-
-<%= form_with url: send_emails_nutrient_email_url, method: :get do |form| %>
-<div class="container">
-    <%= form.email_field :email, placeholder: "exemple@sanlife.me" %>
-    <%= form.submit "Export" %>
-  <% end %>
-</div>
