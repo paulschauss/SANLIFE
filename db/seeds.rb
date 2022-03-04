@@ -39,7 +39,8 @@ nutrient_data = {
 "Zinc" => 'zinc.csv',
 "Protein" => 'protein.csv',
 "Calcium" => 'calcium.csv',
-"Folate" => 'folate.csv'
+"Vitamin B9" => 'vitB9.csv',
+"Vitamin E" => 'vitE.csv'
 }
 
 puts "\n\n"

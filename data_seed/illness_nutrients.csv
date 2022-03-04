@@ -5,9 +5,9 @@ Bloating,Calcium,60
 Bloating,Potassium,30
 Bloating,Magnesium,10
 Concentration,Magnesium,60
-Concentration,Vitamin B12,1
+Concentration,Vitamin B12,2
 Concentration,Vitamin B6,30
-Concentration,Folate,8
+Concentration,Vitamin B9,8
 Depression,Vitamin B6,30
 Depression,Magnesium,70
 Energy,Magnesium,60
@@ -19,14 +19,14 @@ Growth,Vitamin D,10
 Hair loss,Magnesium,20
 Hair loss,Vitamin C,10
 Hair loss,Vitamin B6,10
-Hair loss,Folate,10
+Hair loss,Vitamin B9,10
 Hair loss,Zinc,50
 Immunity,Vitamin C,40
 Immunity,Vitamin D,30
 Immunity,Zinc,30
 Poor sleep,Magnesium,100
 Pregnancy,Magnesium,50
-Pregnancy,Folate,20
+Pregnancy,Vitamin B9,20
 Pregnancy,Vitamin B6,10
 Pregnancy,Vitamin C,10
 Pregnancy,Vitamin D,10
