@@ -12,7 +12,4 @@ class User < ApplicationRecord
   # validates :last_name, presence: true
   # validates :illness, presence: true, length: { maximum: 4 }
 
-  def nutrients
-    illnesses.includes(:nutrients).map { |illness| illness.nutrients }.flatten.uniq
-  end
 end
