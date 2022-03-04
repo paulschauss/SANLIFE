@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <div data-illness-preferences-results-target="results" data-action="refreshResult@window->illness-preferences-results#refresh">
   <div class="result">
     <div class="result-nutrient">
@@ -11,22 +10,7 @@
             <% #n = n + 1 %>
             <%# break if n == 4 %>
           </div>
-=======
-  <div data-illness-preferences-results-target="results" data-action="refreshResult@window->illness-preferences-results#refresh">
-    <% nutrients_with_food.each do |nutrient, foods| %>
-      <p><%= nutrient.name %></p>
-    <% end %>
-    <h2>Weekly Plan</h2>
-    <div class="line-height">
-    </div>
 
-    <% nutrients_with_food.each do |nutrient, foods| %>
-      <div class="nutrient-food-row">
-        <h2 class="nutrient"><strong><%= nutrient.name %></strong></h2>
-        <%# (<%= nutrient.id) %>
-        <% foods.each do |food| %>
-          <%= render "foods/food_cards", food: food, nutrient: nutrient %>
->>>>>>> b3b4f87c62e88b5a96f2bc0bf4af2c976f671b92
         <% end %>
       </div>
       <p>Whilst less important than the nutrients flagged above, <b>calcium</b> (10%) and <b>folate</b> (8%) also scored highly.</p>
