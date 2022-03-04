@@ -1,15 +1,28 @@
-.btn-preferences:hover {
-  background-color: rgba(255, 123, 0, 0.4)
+// .btn-preferences:hover {
+//   background-color: rgba(255, 123, 0, 0.4)
+// }
+
+// .btn-preferences:active {
+//   background-color: blue;
+// }
+
+// .btn-preferences-add {
+//   background-color: green;
+// }
+
+// .btn-preferences-remove {
+//   background-color: red;
+// }
+
+.btn-preferences {
+  border-radius: 8px;
 }
 
-.btn-preferences:active {
-  background-color: blue;
+.btn-active {
+background-color: purple;
+color: green;
 }
-
-.btn-preferences-add {
-  background-color: green;
-}
-
-.btn-preferences-remove {
-  background-color: red;
+.btn-inactive {
+background-color: yellow;
+color: blue;
 }

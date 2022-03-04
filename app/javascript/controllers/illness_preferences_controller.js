@@ -12,11 +12,11 @@ export default class extends Controller {
 
   updateColor() {
     if (this.activeValue) {
-      this.buttonTarget.classList.remove('btn-preferences-remove')
-      this.buttonTarget.classList.add('btn-preferences-add')
+      this.buttonTarget.classList.remove('btn-inactive')
+      this.buttonTarget.classList.add('btn-active')
     } else {
-      this.buttonTarget.classList.add('btn-preferences-add')
-      this.buttonTarget.classList.remove('btn-preferences-remove')
+      this.buttonTarget.classList.add('btn-inactive')
+      this.buttonTarget.classList.remove('btn-active')
     }
   }
 

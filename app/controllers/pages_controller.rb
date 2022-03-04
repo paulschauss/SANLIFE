@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:home]
-  before_action :verify_user_setup, only: [:dashboard]
+  skip_before_action :authenticate_user!, only: [:home, :preferences, :dashboard]
+  # before_action :verify_user_setup, only: [:dashboard]
 
 
   def home
