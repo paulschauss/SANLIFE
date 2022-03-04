@@ -1,7 +1,9 @@
 <div class="card2" data-controller="food-card"
                                       data-food-card-target="card"
-                                      data-food-card-id-value="<%= food.id %>">
-  <p class="small"><%= food.name %></p>
+                                      data-food-card-id-value="<%= food.id %>"
+                                      data-food-card-nutrient-id-value="<%= nutrient.id %>"
+                                      >
+  <p class="small"><%= food.name %> (<%= food.id %>)</p>
   <div class="go-corner">
     <span class="go-arrow" data-action="click->food-card#refresh">X</span>
   </div>

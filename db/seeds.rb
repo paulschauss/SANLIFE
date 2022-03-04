@@ -60,3 +60,12 @@ nutrient_data.each do |name, file|
     )
   end
 end
+
+
+ap "Clean similar"
+
+groups = NutrientFood.all.group_by {|nf| [nf.food.name, nf.nutrient_id]}.values
+
+groups.each do |group|
+  group.sort_by(&:measure_value)[1..].each(&:destroy)
+end

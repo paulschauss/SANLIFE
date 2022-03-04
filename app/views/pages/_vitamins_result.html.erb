@@ -1,16 +1,16 @@
   <div data-illness-preferences-results-target="results" data-action="refreshResult@window->illness-preferences-results#refresh">
-    <% @nutrients.each do |nutrient| %>
+    <% nutrients_with_food.each do |nutrient, foods| %>
       <p><%= nutrient.name %></p>
     <% end %>
     <h2>Weekly Plan</h2>
     <div class="line-height">
     </div>
-    <% @nutrients.each do |nutrient| %>
+
+    <% nutrients_with_food.each do |nutrient, foods| %>
       <div class="nutrient-food-row">
         <h2 class="nutrient"><strong><%= nutrient.name %></strong></h2>
-        <% ids = nutrient.nutrient_foods.order(measure_value: :desc).pluck(:food_id) %>
-        <% Food.find(ids).first(4).each do |food| %>
-          <%= render "foods/food_cards", food: food %>
+        <% foods.each do |food| %>
+          <%= render "foods/food_cards", food: food, nutrient: nutrient %>
         <% end %>
       </div>
     <% end %>
