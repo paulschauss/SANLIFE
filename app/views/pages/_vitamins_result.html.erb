@@ -9,6 +9,7 @@
     <% nutrients_with_food.each do |nutrient, foods| %>
       <div class="nutrient-food-row">
         <h2 class="nutrient"><strong><%= nutrient.name %></strong></h2>
+        <%# (<%= nutrient.id) %>
         <% foods.each do |food| %>
           <%= render "foods/food_cards", food: food, nutrient: nutrient %>
         <% end %>
