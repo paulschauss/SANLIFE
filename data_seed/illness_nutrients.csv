@@ -1,42 +1,38 @@
-﻿illness_name,nutrient_name
-Sport,Vitamin B12
-Stress & Anxiety,Vitamin B12
-Concentration,Vitamin B12
-Energy,Vitamin B12
-Concentration,Vitamin B6
-Immunity,Vitamin B6
-Energy,Vitamin B6
-Growth,Calcium
-Energy,Vitamin C
-Immunity,Vitamin C
-Sport,Vitamin C
-Pregnancy,Vitamin C
-Stress & Anxiety,Vitamin D
-Concentration,Vitamin D
-Acne,Vitamin D
-Pregnancy,Vitamin D
-Immunity,Vitamin D
-Depression,Vitamin D
-Immunity,Vitamin E
-Bloating,Potassium
-Sport,Potassium
-Energy,Magnesium
-Stress & Anxiety,Magnesium
-Insomnia,Magnesium
-Pregnancy,Magnesium
-Sport,Magnesium
-Energy,Iron
-Concentration,Iron
-Immunity,Iron
-Energy,Zinc
-Immunity,Zinc
-Sport,Zinc
-Hair loss,Zinc
-Concentration,Zinc
-Acne,Zinc
-Energy,Protein
-Growth,Protein
-Sport,Protein
-Depression,Folate
-Hair loss,Folate
-Immunity,Folate
+﻿illness_name,nutrient_name,weight
+Acne,Vitamin D,50
+Acne,Zinc,50
+Bloating,Calcium,60
+Bloating,Potassium,30
+Bloating,Magnesium,10
+Concentration,Magnesium,60
+Concentration,Vitamin B12,2
+Concentration,Vitamin B6,30
+Concentration,Vitamin B9,8
+Depression,Vitamin B6,30
+Depression,Magnesium,70
+Energy,Magnesium,60
+Energy,Vitamin C,30
+Energy,Vitamin D,10
+Growth,Calcium,30
+Growth,Magnesium,60
+Growth,Vitamin D,10
+Hair loss,Magnesium,20
+Hair loss,Vitamin C,10
+Hair loss,Vitamin B6,10
+Hair loss,Vitamin B9,10
+Hair loss,Zinc,50
+Immunity,Vitamin C,40
+Immunity,Vitamin D,30
+Immunity,Zinc,30
+Poor sleep,Magnesium,100
+Pregnancy,Magnesium,50
+Pregnancy,Vitamin B9,20
+Pregnancy,Vitamin B6,10
+Pregnancy,Vitamin C,10
+Pregnancy,Vitamin D,10
+Sport,Magnesium,40
+Sport,Protein,50
+Sport,Vitamin D,9
+Sport,Zinc,1
+Stress & Anxiety,Magnesium,65
+Stress & Anxiety,Vitamin B6,35

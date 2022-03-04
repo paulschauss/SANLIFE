@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  mount LetterOpenerWeb::Engine, at: "/letter_opener" if Rails.env.development?
 
   devise_for :users, controllers: {
     sessions: 'users/sessions'
@@ -18,6 +19,7 @@ Rails.application.routes.draw do
     end
   end
 
+  get 'send', to: "send_emails#nutrient_email"
   get 'dashboard', to: "pages#dashboard"
   get 'preferences', to: "pages#preferences"
 
