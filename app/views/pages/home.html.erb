@@ -5,8 +5,7 @@
 
 <%= form_with url: send_emails_nutrient_email_url, method: :get do |form| %>
 <div class="container">
-    <%= form.label :email, "Enter your Email:"%>
-    <%= form.email_field :email %>
+    <%= form.email_field :email, placeholder: "exemple@sanlife.me" %>
     <%= form.submit "Export" %>
   <% end %>
 </div>
