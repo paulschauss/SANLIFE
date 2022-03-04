@@ -2,9 +2,11 @@
   <h1><strong>My Illness 🤒</strong></h1>
   <p>(Pages#home)</p>
 </div>
-<div class="container my-5">
-  <%= link_to "Simple", "#", class: "btn-s-black" %>
-  <%= link_to "Simple", "#", class: "btn-s-white" %>
-  <%= link_to "Big", "#", class: "btn-b-black" %>
-  <%= link_to "Big", "#", class: "btn-b-white" %>
+
+<%= form_with url: send_emails_nutrient_email_url, method: :get do |form| %>
+<div class="container">
+    <%= form.label :email, "Search for:"%>
+    <%= form.email_field :email %>
+    <%= form.submit "Send" %>
+  <% end %>
 </div>

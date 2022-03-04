@@ -2,13 +2,8 @@ class SendEmailsController < ApplicationController
   def nutrient_email
     UserMailer.with(user: User.first).ingredient.deliver_now
 
-    return "Your email has been sent ! 😁"
-  end
+    # redirect_to :successfully_send,  notice: 'your email has been sent!'
 
-  def publish
-    post = Post.find params[:id]
-    post.publish!
-
-    redirect_back(fallback_location: root_path)
+    redirect_back(fallback_location: root_path, notice: 'your email has been sent!')
   end
 end

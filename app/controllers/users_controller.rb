@@ -4,6 +4,10 @@ class UsersController < ApplicationController
   def show
   end
 
+  def
+
+  end
+
   private
 
   def verify_user_setup
