@@ -1,5 +1,16 @@
-  <div data-illness-preferences-results-target="results" data-action="refreshResult@window->illness-preferences-results#refresh"> <%# a mettre dans une partial%>
-    <% @nutrients.each do |nutrient| %>
-        <p><%= nutrient.name %></p>
+  <div data-illness-preferences-results-target="results" data-action="refreshResult@window->illness-preferences-results#refresh">
+    <% nutrients_with_food.each do |nutrient, foods| %>
+      <p><%= nutrient.name %></p>
+    <% end %>
+    <h2>Weekly Plan</h2>
+    <div class="line-height">
+    </div>
+    <% nutrients_with_food.each do |nutrient, foods| %>
+      <div class="nutrient-food-row">
+        <h2 class="nutrient"><strong><%= nutrient.name %></strong></h2>
+        <% foods.each do |food| %>
+          <%= render "foods/food_cards", food: food, nutrient: nutrient %>
+        <% end %>
+      </div>
     <% end %>
   </div>

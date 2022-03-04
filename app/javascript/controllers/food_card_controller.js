@@ -3,12 +3,13 @@ import { Controller } from "stimulus"
 export default class extends Controller {
   static targets = [ "card" ]
   static values = {
-    id: Number
+    id: Number,
+    nutrientId: Number
   }
 
   refresh() {
 
-    const new_card = `foods/${this.idValue}/refresh`
+    const new_card = `foods/next?nutrient_id=${this.nutrientIdValue}`
     fetch(new_card, { headers: { "Accept": "text/plain" } })
     .then(response => response.text())
     .then((data) => {
@@ -17,5 +18,6 @@ export default class extends Controller {
   }
 
   connect() {
+    console.log(this.nutrientIdValue)
   }
 }

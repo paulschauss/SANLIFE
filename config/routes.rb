@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   resources :users, only: [:show]
   resources :foods, only: [:index] do
-    get :refresh, on: :member
+    get :next, on: :collection
   end
 
   resources :users do
