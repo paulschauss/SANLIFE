@@ -16,13 +16,24 @@
 
 .btn-preferences {
   border-radius: 8px;
+  padding: 20px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.btn-preferences:hover {
+  background: rgba(255, 123, 0, 0.4);
 }
 
 .btn-active {
-background-color: purple;
-color: green;
+background-color: #FF7B00;
+color: white;
+font-weight: 600;
 }
 .btn-inactive {
-background-color: yellow;
-color: blue;
+background-color: #FFF4EB;
+color: black;
+font-weight: 400;
 }
