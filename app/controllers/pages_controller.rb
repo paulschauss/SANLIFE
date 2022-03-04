@@ -1,6 +1,12 @@
 class PagesController < ApplicationController
+<<<<<<< HEAD
+  skip_before_action :authenticate_user!, only: [:home, :preferences, :dashboard]
+  # before_action :verify_user_setup, only: [:dashboard]
+
+=======
   skip_before_action :authenticate_user!, only: [:home]
   before_action :verify_user_setup, only: [:dashboard]
+>>>>>>> b3b4f87c62e88b5a96f2bc0bf4af2c976f671b92
 
   def home
   end

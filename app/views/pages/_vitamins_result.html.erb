@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+<div data-illness-preferences-results-target="results" data-action="refreshResult@window->illness-preferences-results#refresh">
+  <div class="result">
+    <div class="result-nutrient">
+      <h3><b>The main nutrients that you should prioritise are:</b></h3>
+      <div class="result-nutrient-each row justify-content-center">
+        <%# n = 0 %>
+        <% nutrients_with_food.each do |nutrient, foods| %>
+          <div class="card-nutrient">
+            <p><%= nutrient.name %></p>
+            <% #n = n + 1 %>
+            <%# break if n == 4 %>
+          </div>
+=======
   <div data-illness-preferences-results-target="results" data-action="refreshResult@window->illness-preferences-results#refresh">
     <% nutrients_with_food.each do |nutrient, foods| %>
       <p><%= nutrient.name %></p>
@@ -12,7 +26,24 @@
         <%# (<%= nutrient.id) %>
         <% foods.each do |food| %>
           <%= render "foods/food_cards", food: food, nutrient: nutrient %>
+>>>>>>> b3b4f87c62e88b5a96f2bc0bf4af2c976f671b92
         <% end %>
       </div>
-    <% end %>
+      <p>Whilst less important than the nutrients flagged above, <b>calcium</b> (10%) and <b>folate</b> (8%) also scored highly.</p>
+    </div>
+    <div class="result-nutrient-foods">
+      <h3><b>Food for the week:</b></h3>
+      <p>Below are the key foods that you should try and consume this week. The foods are sorted by the amount of the relevant nutrient listed. Feel free to replace those which you don't like or are alleric to, no hard feelings!</p>
+      <div class="result-nutrient-foods-each row justify-content-center">
+        <% nutrients_with_food.each do |nutrient, foods| %>
+          <div class="nutrient-food-row">
+            <h3 class="nutrient"><strong><%= nutrient.name %></strong></h3>
+            <% foods.each do |food| %>
+              <%= render "foods/food_cards", food: food, nutrient: nutrient %>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+    </div>
   </div>
+</div>
