@@ -1,4 +1,13 @@
 .card-nutrient {
-  background-color: aqua;
+  background-color: white;
   display: flex;
+  margin: 18px;
+  padding-top: 160px;
+  text-align: center;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-nutrient p {
+  font-weight: 600;
+  font-size: 28px;
 }
