@@ -18,7 +18,19 @@ class PagesController < ApplicationController
     @nutrients_with_food = @nutrients.map {|nutrient| [nutrient, nutrient.foods.order(measure_value: :desc).limit(4)] }.to_h
 
     cookies[:proposed_foods] = @nutrients_with_food.values.flatten.map(&:id).map(&:to_s).join (',')
+
+    illness_ids = []
+    UserIllness.all.each do |user_illness|
+      illness_ids << user_illness.illness_id
+    end
+
+    illness_nutrients = IllnessNutrient.select("illness_nutrients.\"nutrient_id\", SUM(weight) / #{illness_ids.size} as impact")
+                                      .where(illness_id: illness_ids)
+                                      .group(:nutrient_id)
+
+    @impact = illness_nutrients.map { |inn| [inn.nutrient.name, inn.impact] }.to_h
   end
+
 
   private
 

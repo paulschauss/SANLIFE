@@ -3,14 +3,12 @@
     <div class="result-nutrient">
       <h3><b>The main nutrients that you should prioritise are:</b></h3>
       <div class="result-nutrient-each row justify-content-center">
-        <%# n = 0 %>
-        <% nutrients_with_food.each do |nutrient, foods| %>
+        <%# <% nutrients_with_food.each do |nutrient, foods| %>
+        <% impact.each do |nutrient, impact_value| %>
           <div class="card-nutrient col-3">
-            <p><%= nutrient.name %></p>
-            <% #n = n + 1 %>
-            <%# break if n == 4 %>
+            <p><%= nutrient %></p>
+            <p> -<%= impact_value %>%</p>
           </div>
-
         <% end %>
       </div>
       <p>Whilst less important than the nutrients flagged above, <b>calcium</b> (10%) and <b>folate</b> (8%) also scored highly.</p>
