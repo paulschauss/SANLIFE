@@ -3,19 +3,23 @@
     <div class="result">
       <div class="result-nutrient">
         <h3><b>The main nutrients that you should prioritise are:</b></h3>
-        <div class="result-nutrient-each row justify-content-center">
+        <div class="result-nutrient-each">
           <%# <% nutrients_with_food.each do |nutrient, foods| %>
-          <% impact.each do |nutrient, impact_value| %>
-            <div class="card-nutrient col-2">
-              <div class="card-nutrient-icon">
-                <img src="eggs.png" alt="card-nutrient-icon">
+          <div class="all-card-nutrient">
+            <% impact.each do |nutrient, impact_value| %>
+              <div class="card-nutrient">
+                <div class="card-nutrient-icon">
+                  <%= image_tag 'eggs.png' %>
+                </div>
+                <div class="card-nutrient-name">
+                  <p><%= nutrient %></p>
+                </div>
+                <div class="card-nutrient-pourcentage">
+                  <p> <%= impact_value %>%</p>
+                </div>
               </div>
-              <p><%= nutrient %></p>
-              <div class="card-nutrient-pourcentage">
-                <p> -<%= impact_value %>%</p>
-              </div>
-            </div>
-          <% end %>
+            <% end %>
+          </div>
           <p>Whilst less important than the nutrients flagged above,
           <% impact.each do |nutrient, impact_value| %>
             <b><%= nutrient %></b> <b>(<%= impact_value %>%)</b>,
