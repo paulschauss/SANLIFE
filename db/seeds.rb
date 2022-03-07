@@ -16,40 +16,56 @@ puts "Marie user created"
 paul = User.create!(first_name: 'Paul', last_name: 'SCHAUSS', email: 'paul@localhost.me', password: '123456')
 puts "Paul user created"
 
-
-  CSV.foreach("data_seed/illness_nutrients.csv", headers: :first_row, header_converters: :symbol) do |row|
-    illness = Illness.find_or_create_by(name: row[:illness_name])
-    nutrient = Nutrient.find_or_create_by(name: row[:nutrient_name])
-    weight = row[:weight]
-
-    p IllnessNutrient.create!(
-      illness: illness,
-      nutrient: nutrient,
-      weight: weight
-    )
-
-  end
-
 nutrient_data = {
-"Vitamin B12" => 'vitB12.csv',
-"Vitamin C" => 'vitC.csv',
-"Vitamin D" => 'vitD.csv',
-"Vitamin B6" => 'vitB6.csv',
-"Potassium" => 'potassium.csv',
-"Iron" => 'iron.csv',
-"Magnesium" => 'magnesium.csv',
-"Zinc" => 'zinc.csv',
-"Protein" => 'protein.csv',
-"Calcium" => 'calcium.csv',
-"Vitamin B9" => 'vitB9.csv',
-"Vitamin E" => 'vitE.csv'
+  "Vitamin B12" => 'vitB12.csv',
+  "Vitamin C" => 'vitC.csv',
+  "Vitamin D" => 'vitD.csv',
+  "Vitamin B6" => 'vitB6.csv',
+  "Potassium" => 'potassium.csv',
+  "Iron" => 'iron.csv',
+  "Magnesium" => 'magnesium.csv',
+  "Zinc" => 'zinc.csv',
+  "Protein" => 'protein.csv',
+  "Calcium" => 'calcium.csv',
+  "Vitamin B9" => 'vitB9.csv',
+  "Vitamin E" => 'vitE.csv'
+}
+
+nutrient_logo = {
+  "Vitamin B12" => '001-fish.png',
+  "Vitamin C" => '010-orange.png',
+  "Vitamin D" => '007-peas.png',
+  "Vitamin B6" => '006-meat.png',
+  "Potassium" => '012-avocado.png',
+  "Iron" => '011-broccoli.png',
+  "Magnesium" => '003-spinach.png',
+  "Zinc" => '004-cheese.png',
+  "Protein" => '005-chicken-leg.png',
+  "Calcium" => '008-milk.png',
+  "Vitamin B9" => '002-cabbage.png',
+  "Vitamin E" => '009-eggs.png'
 }
 
 puts "\n\n"
 
+
+
+CSV.foreach("data_seed/illness_nutrients.csv", headers: :first_row, header_converters: :symbol) do |row|
+  illness = Illness.find_or_create_by(name: row[:illness_name])
+  nutrient = Nutrient.find_or_create_by(name: row[:nutrient_name], logo: nutrient_logo[row[:nutrient_name]])
+  weight = row[:weight]
+
+  p IllnessNutrient.create!(
+    illness: illness,
+    nutrient: nutrient,
+    weight: weight
+  )
+end
+
+
 nutrient_data.each do |name, file|
   puts "adding #{name} ..."
-  nutrient = Nutrient.find_or_create_by(name: name)
+  nutrient = Nutrient.find_or_create_by(name: name, logo: nutrient_logo[name])
 
   CSV.foreach("data_seed/#{file}", headers: :first_row, header_converters: :symbol) do |row|
     food_name = row[:fooddescription].split(',').first
@@ -63,8 +79,7 @@ nutrient_data.each do |name, file|
   end
 end
 
-
-ap "Clean similar"
+p "Clean similar"
 
 groups = NutrientFood.all.group_by {|nf| [nf.food.name, nf.nutrient_id]}.values
 
