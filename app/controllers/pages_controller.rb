@@ -18,6 +18,7 @@ class PagesController < ApplicationController
     @nutrients_with_food = @nutrients.map {|nutrient| [nutrient, nutrient.foods.order(measure_value: :desc).limit(4)] }.to_h
 
     cookies[:proposed_foods] = @nutrients_with_food.values.flatten.map(&:id).map(&:to_s).join (',')
+    cookies[:saved_foods] = @nutrients_with_food.values.flatten.map(&:id).map(&:to_s).join (',')
 
     illness_ids = []
     UserIllness.all.each do |user_illness|
