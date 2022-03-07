@@ -20,10 +20,12 @@ puts "Paul user created"
   CSV.foreach("data_seed/illness_nutrients.csv", headers: :first_row, header_converters: :symbol) do |row|
     illness = Illness.find_or_create_by(name: row[:illness_name])
     nutrient = Nutrient.find_or_create_by(name: row[:nutrient_name])
+    weight = row[:weight]
 
     p IllnessNutrient.create!(
       illness: illness,
-      nutrient: nutrient
+      nutrient: nutrient,
+      weight: weight
     )
 
   end
