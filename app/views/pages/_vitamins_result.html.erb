@@ -4,41 +4,42 @@
       <div class="result-nutrient">
         <h3><b>The main nutrients that you should prioritise are:</b></h3>
         <div class="result-nutrient-each row justify-content-center">
-          <% nutrients_with_food.each do |nutrient, foods| %>
+          <%# <% nutrients_with_food.each do |nutrient, foods| %>
+          <% impact.each do |nutrient, impact_value| %>
             <div class="card-nutrient col-2">
               <div class="card-nutrient-icon">
                 <img src="eggs.png" alt="card-nutrient-icon">
               </div>
+              <p><%= nutrient %></p>
               <div class="card-nutrient-pourcentage">
-                <p>80%</p>
+                <p> -<%= impact_value %>%</p>
               </div>
-              <p><%= nutrient.name %></p>
             </div>
           <% end %>
-        </div>
-        <p>Whilst less important than the nutrients flagged above,
-          <% nutrients_with_food.each do |nutrient, foods| %>
-            <b><%= nutrient.name %></b> (80%),
+          <p>Whilst less important than the nutrients flagged above,
+          <% impact.each do |nutrient, impact_value| %>
+            <b><%= nutrient %></b> <b>(<%= impact_value %>%)</b>,
           <% end %>
-        also scored highly.</p>
-      </div>
-      <div class="result-nutrient-foods">
-        <h3><b>Food for the week:</b></h3>
-        <p>Below are the key foods that you should try and consume this week. The foods are sorted by the amount of the relevant nutrient listed. Feel free to replace those which you don't like or are alleric to, no hard feelings!</p>
-        <div class="result-nutrient-foods-each row justify-content-center">
-          <% nutrients_with_food.each do |nutrient, foods| %>
-            <div class="nutrient-food-row">
-              <h3 class="nutrient"><strong><%= nutrient.name %></strong></h3>
-              <% foods.each do |food| %>
-                <%= render "foods/food_cards", food: food, nutrient: nutrient %>
-              <% end %>
-            </div>
-          <% end %>
+          also scored highly.</p>
+        </div>
+        <div class="result-nutrient-foods">
+          <h3><b>Food for the week:</b></h3>
+          <p>Below are the key foods that you should try and consume this week. The foods are sorted by the amount of the relevant nutrient listed. Feel free to replace those which you don't like or are alleric to, no hard feelings!</p>
+          <div class="result-nutrient-foods-each row justify-content-center">
+            <% nutrients_with_food.each do |nutrient, foods| %>
+              <div class="nutrient-food-row">
+                <h3 class="nutrient"><strong><%= nutrient.name %></strong></h3>
+                <% foods.each do |food| %>
+                  <%= render "foods/food_cards", food: food, nutrient: nutrient %>
+                <% end %>
+              </div>
+            <% end %>
+          </div>
         </div>
       </div>
+      <p>Et voilà! Click ’Export’ to receive a useful summary of your plan above, straight to your inbox.</p>
+      <%= link_to "Send me an email", send_path, class:'btn btn-primary'  %>
+      <p>See you next week!</h3>
     </div>
-    <p>Et voilà! Click ’Export’ to receive a useful summary of your plan above, straight to your inbox.</p>
-    <%= link_to "Send me an email", send_path, class:'btn btn-primary'  %>
-    <p>See you next week!</h3>
   <% end %>
 </div>

@@ -1,4 +1,3 @@
-
 <div class="container" data-controller="illness-preferences-results">
   <h1>Welcome to SANLIFE</h1>
   <h2>Find out which foods are best for <i>you</i>.</h2>
@@ -10,7 +9,12 @@
       <% end %>
     </div>
   </div>
-    <div id="vitamins">
-      <%= render "vitamins_result", nutrients_with_food: @nutrients_with_food %>
-    </div>
+
+  <div id="vitamins">
+    <%= render "vitamins_result", nutrients_with_food: @nutrients_with_food, impact: @impact %>
+  </div>
+  <p>Et voilà! Click ’Export’ to receive a useful summary of your plan above, straight to your inbox.</p>
+  <%= link_to "Send me an email", send_path, class:'btn btn-primary'  %>
+  <p>See you next week!</h3>
+
 </div>
