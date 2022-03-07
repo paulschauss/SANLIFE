@@ -9,22 +9,19 @@
   </style>
 
   <body style="font-family:verdana;">
-    coucou
     <h2>Hi <%= @user.first_name %>, </h2>
     <h3>Thanks for using SANLIFE!</h3>
     <p>Below is a list of foods which you should aim to eat this week:</p>
-        <div  style="display:flex;" style="border: 2px solid #f2f8f9;"
-              style="border-radius: 4px;" style="padding: 8px;">
       <% @nutrients.each do |nutrient| %>
-          <p>Foods with <strong><%= nutrient.name %></strong>:</p>
-          <ul>
-            <% @foods.each do |food| %>
-              <li><%= food.name %></li>
-            <% end %>
-          </ul>
-        </div>
+        <p>Foods with <strong><%= nutrient.name %></strong>:</p>
+        <ul>
+          <% @foods.each do |food| %>
+            <li><%= food.name %></li>
+          <% end %>
+        </ul>
       <% end %>
 
-    <p>Thanks for joining and have a great day!</p>
+    <p>See you next week!</p>
+    <p><strong>The SANLIFE team</strong></p>
   </body>
 </html>
