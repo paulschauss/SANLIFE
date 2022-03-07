@@ -10,12 +10,7 @@
       <% end %>
     </div>
   </div>
-  <div id="vitamins">
-    <%= render "vitamins_result", nutrients_with_food: @nutrients_with_food %>
-  </div>
-  <p>Et voilà! Click ’Export’ to receive a useful summary of your plan above, straight to your inbox.</p>
-  <%= link_to "Send me an email", send_path, class:'btn btn-primary'  %>
-
-  <p>See you next week!</h3>
-
+    <div id="vitamins">
+      <%= render "vitamins_result", nutrients_with_food: @nutrients_with_food %>
+    </div>
 </div>
