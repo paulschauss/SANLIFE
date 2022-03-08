@@ -8,18 +8,15 @@ Rails.application.routes.draw do
   }
   root to: 'pages#home'
 
-  resources :users, only: [:show]
-  resources :foods, only: [:index] do
-    get :next, on: :collection
+  resources :foods, only: [] do
+    post :exclude, on: :member
   end
 
-  resources :users do
-    member do
-      get :illness
-    end
+  resources :users, only: [] do
+    get :illness, on: :member
   end
 
-  get 'send', to: "send_emails#nutrient_email"
+  post 'send_email', to: "send_emails#nutrient_email"
   get 'dashboard', to: "pages#dashboard"
   get 'preferences', to: "pages#preferences"
 
@@ -27,6 +24,8 @@ Rails.application.routes.draw do
     post :add, on: :member
     delete :remove, on: :member
   end
+
+  get 'debug', to: 'application#debug'
 
   resources :illness_nutrients, only: [:index]
 end

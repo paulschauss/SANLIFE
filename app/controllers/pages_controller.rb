@@ -13,11 +13,12 @@ class PagesController < ApplicationController
   def preferences
     @illnesses = Illness.all
 
-    @nutrients = current_user.nutrients
-
-    @nutrients_with_food = @nutrients.map { |nutrient| [nutrient, nutrient.foods.order(measure_value: :desc).limit(4)] }.to_h
+    @nutrients = current_user.nutrients.first(4)
+    @nutrients_with_food = FoodByNutrientService.call(@nutrients, [])
 
     cookies[:proposed_foods] = @nutrients_with_food.values.flatten.map(&:id).map(&:to_s).join (',')
+    cookies[:saved_foods] = @nutrients_with_food.values.flatten.map(&:id).map(&:to_s).join (',')
+    cookies[:excluded_foods] = []
 
     illness_ids = []
     UserIllness.all.each do |user_illness|

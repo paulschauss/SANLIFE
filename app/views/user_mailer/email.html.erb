@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+
+  <style>
+
+  </style>
+
+  <body style="font-family:verdana;">
+    <h2>Hi <%= @user.first_name %>, </h2>
+    <h3>Thanks for using SANLIFE!</h3>
+    <p>Below is a list of foods which you should aim to eat this week:</p>
+        <% @nutrients_with_food.each do |nutrient, foods| %>
+        <p>Foods with <strong><%= nutrient.name %></strong>:</p>
+        <ul>
+          <% foods.each do |food| %>
+            <li><%= food.name %></li>
+          <% end %>
+        </ul>
+        <% end %>
+
+    <p>See you next week!</p>
+    <p><strong>The SANLIFE team</strong></p>
+  </body>
+</html>

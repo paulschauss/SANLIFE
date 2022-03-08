@@ -1,8 +1,9 @@
 class IllnessNutrientsController < ApplicationController
   def index
-    @nutrients = current_user.nutrients
+    @nutrients = current_user.nutrients.first(4)
 
-    @nutrients_with_food = @nutrients.map {|nutrient| [nutrient, nutrient.foods.order(measure_value: :desc).limit(4)] }.to_h
+    excluded_foods = cookies[:excluded_foods].split(',')
+    @nutrients_with_food = FoodByNutrientService.call(@nutrients, excluded_foods)
 
     cookies[:proposed_foods] = @nutrients_with_food.values.flatten.map(&:id).map(&:to_s).join(',')
 
