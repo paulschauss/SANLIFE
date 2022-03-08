@@ -21,7 +21,13 @@
               </div>
             <% end %>
           </div>
-          <p>Whilst less important, than the nutrients flagged above <%= stringify(@impact_after_4) %> also scored highly.</p>
+          <% unless @impact_after_4.empty? %>
+            <% if @impact_after_4 == 1 %>
+              <p>Whilst less important, than the nutrient flagged above <%= stringify(@impact_after_4) %> also scored highly.</p>
+            <% else %>
+              <p>Whilst less important, than the nutrients flagged above <%= stringify(@impact_after_4) %> also scored highly.</p>
+            <% end %>
+          <% end %>
         </div>
         <div class="result-nutrient-foods">
           <h3><b>Food for the week:</b></h3>
