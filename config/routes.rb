@@ -19,7 +19,7 @@ Rails.application.routes.draw do
     end
   end
 
-  get 'send', to: "send_emails#nutrient_email"
+  post 'send_email', to: "send_emails#nutrient_email"
   get 'dashboard', to: "pages#dashboard"
   get 'preferences', to: "pages#preferences"
 
