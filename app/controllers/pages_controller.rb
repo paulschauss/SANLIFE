@@ -13,7 +13,7 @@ class PagesController < ApplicationController
   def preferences
     @illnesses = Illness.all
 
-    @nutrients = current_user.nutrients
+    @nutrients = current_user.nutrients.first(4)
     @nutrients_with_food = FoodByNutrientService.call(@nutrients, [])
 
     cookies[:proposed_foods] = @nutrients_with_food.values.flatten.map(&:id).map(&:to_s).join (',')
@@ -29,7 +29,9 @@ class PagesController < ApplicationController
                                       .where(illness_id: illness_ids)
                                       .group(:nutrient_id)
 
-    @impact = illness_nutrients.map { |inn| [inn.nutrient.name, inn.impact] }.to_h
+    @impact_before_4 = illness_nutrients.map { |inn| [inn.nutrient.name, inn.impact] }.to_h.sort_by {|k,v| v}.reverse.first(4).to_h
+    @impact_after_4 = illness_nutrients.map { |inn| [inn.nutrient.name, inn.impact] }.to_h.sort_by {|k,v| v}.reverse.drop(4).to_h
+
   end
 
 

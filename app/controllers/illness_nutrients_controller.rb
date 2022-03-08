@@ -1,6 +1,6 @@
 class IllnessNutrientsController < ApplicationController
   def index
-    @nutrients = current_user.nutrients
+    @nutrients = current_user.nutrients.first(4)
 
     excluded_foods = cookies[:excluded_foods].split(',')
     @nutrients_with_food = FoodByNutrientService.call(@nutrients, excluded_foods)
@@ -14,8 +14,8 @@ class IllnessNutrientsController < ApplicationController
                                       .group(:nutrient_id)
 
 
-    @impact = illness_nutrients.map { |inn| [inn.nutrient.name, inn.impact] }.to_h
-
+    @impact_before_4 = illness_nutrients.map { |inn| [inn.nutrient.name, inn.impact] }.to_h.sort_by {|k,v| v}.reverse.first(4).to_h
+    @impact_after_4 = illness_nutrients.map { |inn| [inn.nutrient.name, inn.impact] }.to_h.sort_by {|k,v| v}.reverse.drop(4).to_h
 
 
     render partial: 'pages/vitamins_result', locals: { nutrients_with_food: @nutrients_with_food, impact: @impact}
