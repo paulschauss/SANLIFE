@@ -9,6 +9,20 @@ export default class extends Controller {
     urlrefresh: String,
   }
 
+  excludeFood(event) {
+    console.log("je veux exclude")
+    console.log(event.currentTarget.dataset.foodId)
+    const foodId = event.currentTarget.dataset.foodId
+    const verb = "POST"
+    fetch(`/foods/${foodId}/exclude`, {
+      method: verb,
+      headers: {
+        "X-CSRF-Token": csrfToken()
+      }
+    }).then(response => this.refresh() )
+  }
+
+
   refresh() {
     const url = '/illness_nutrients'
 

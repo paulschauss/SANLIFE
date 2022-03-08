@@ -8,15 +8,12 @@ Rails.application.routes.draw do
   }
   root to: 'pages#home'
 
-  resources :users, only: [:show]
-  resources :foods, only: [:index] do
-    get :next, on: :collection
+  resources :foods, only: [] do
+    post :exclude, on: :member
   end
 
-  resources :users do
-    member do
-      get :illness
-    end
+  resources :users, only: [] do
+    get :illness, on: :member
   end
 
   post 'send_email', to: "send_emails#nutrient_email"
