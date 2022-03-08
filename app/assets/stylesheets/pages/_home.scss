@@ -2,33 +2,33 @@
 .banner {
   background-size: cover;
   background-position: center;
-  padding: 150px 0;
+  padding: 261px;
 }
 
 .banner h1 {
   margin: 0;
-  color: white;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 32px;
+  font-size: 64px;
   font-weight: bold;
 }
 
 .banner p {
   font-size: 20px;
-  color: white;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-}
-
-.container-home {
-
 }
 
 .btn-home {
-  background-color: #FFC085;
+  color: #FFC65A;
+  border: 1px solid #FFC65A;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  transition: opacity 0.3s ease;
+  background-color: #FF7B00;
   text-decoration:none;
 }
 
 .btn-home:hover {
-  background-color: #FFF4EB;
+  background: rgba(255, 123, 0, 0.4);
+  color: #E67E22;
+  border: 1px solid #E67E22;
   text-decoration:none;
 }

@@ -6,13 +6,13 @@ body {
 
 .footer {
   margin-top: auto;
-  background: #3B9D8F;
+  background: #F4F4F4;
   display: flex;
   align-items: center;
   justify-content: space-around;
   height: 54px;
   padding: 0px 100px;
-  color: #B4E4D3;
+  color: #E67E22;
   padding: 10px 10px 0px 10px;
 }
 .footer-links {
@@ -21,7 +21,7 @@ body {
 }
 
 .footer-links a {
-  color: #B4E4D3;
+  color: #E67E22;
   opacity: 0.75;
   text-decoration: none;
   font-size: 24px;
@@ -29,14 +29,14 @@ body {
 }
 .footer-links a:hover {
   opacity: 1;
-  color: rgb(214, 255, 210);
+  color: #FFC65A;
 }
 .footer .fa-heart {
-  color: #D23333;
+  color: #E67E22;
 }
 
 .links-about{
-  color: #B4E4D3;
+  color: #FFC65A;
   opacity: 0.75;
   text-decoration: none;
   font-size: 12px;
@@ -44,5 +44,5 @@ body {
 }
 .links-about:hover {
   opacity: 1;
-  color: rgb(214, 255, 210);
+  color: #FFC65A;
 }
