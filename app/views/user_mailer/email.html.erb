@@ -11,17 +11,17 @@
   <body style="font-family:verdana;">
     <h2>Hi <%= @user.first_name %>, </h2>
     <h3>Thanks for using SANLIFE!</h3>
-    <p>Below is a list of foods which you should aim to eat this week:</p>
-        <% @nutrients_with_food.each do |nutrient, foods| %>
+    <p>Below is a list of foods which contain the relevant vitamins and minerals that you may need:</p>
+        <% @nutrients_with_food.each do |nutrient, excluded_foods| %>
         <p>Foods with <strong><%= nutrient.name %></strong>:</p>
         <ul>
-          <% foods.each do |food| %>
+          <% excluded_foods.each do |food| %>
             <li><%= food.name %></li>
           <% end %>
         </ul>
         <% end %>
 
-    <p>See you next week!</p>
+    <p>See you soon!</p>
     <p><strong>The SANLIFE team</strong></p>
   </body>
 </html>

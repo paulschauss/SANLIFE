@@ -2,13 +2,11 @@ class UserMailer < ApplicationMailer
 
   def email
     @user = params[:user]
-
-    @foods = Food.find(params[:food_ids])
-
-    @nutrients = @user.nutrients
-    @nutrients_with_food = @nutrients.map {|nutrient| [nutrient, nutrient.foods.order(measure_value: :desc).limit(4)] }.to_h
+    @nutrients = @user.nutrients.first(4)
+    excluded_foods = params[:excluded_foods]
+    @nutrients_with_food = FoodByNutrientService.call(@nutrients, excluded_foods)
 
     mail(to: @user.email, subject: "Your Food Plan")
-
   end
+
 end
