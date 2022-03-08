@@ -52,10 +52,12 @@
 
 .card-nutrient-icon {
   position: absolute;
-  top: -28px;
-  right: -27px;
+  top: -11px;
+  right: -16px;
 }
 
 .card-nutrient-icon img {
-  width: 198px;
+  width: 162px;
+  opacity: 0.6;
+  filter: invert(48%) sepia(48%) saturate(2220%) hue-rotate(1deg) brightness(103%) contrast(104%);
 }
