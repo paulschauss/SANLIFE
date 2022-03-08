@@ -1,1 +1,39 @@
 // Specific CSS for your home-page
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 129px;
+}
+
+.banner h1 {
+  margin: 0;
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 20px;
+}
+
+.btn-home {
+  color: white;
+  border: 1px solid #FFC65A;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  transition: opacity 0.3s ease;
+  background-color: #FF7A02;
+  text-decoration:none;
+}
+
+.btn-home:hover {
+  background: rgba(255, 123, 0, 0.4);
+  color: #FF7A02;
+  border: 1px solid #FF7A02;
+  background-color: white;
+  text-decoration:none;
+}
+
+.info {
+  margin-top: 84px;
+}
