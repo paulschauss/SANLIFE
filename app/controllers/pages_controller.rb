@@ -15,7 +15,7 @@ class PagesController < ApplicationController
 
     @nutrients = current_user.nutrients
 
-    @nutrients_with_food = @nutrients.map {|nutrient| [nutrient, nutrient.foods.order(measure_value: :desc).limit(4)] }.to_h
+    @nutrients_with_food = @nutrients.map { |nutrient| [nutrient, nutrient.foods.order(measure_value: :desc).limit(4)] }.to_h
 
     cookies[:proposed_foods] = @nutrients_with_food.values.flatten.map(&:id).map(&:to_s).join (',')
 
@@ -28,7 +28,9 @@ class PagesController < ApplicationController
                                       .where(illness_id: illness_ids)
                                       .group(:nutrient_id)
 
-    @impact = illness_nutrients.map { |inn| [inn.nutrient.name, inn.impact] }.to_h
+    @impact_before_4 = illness_nutrients.map { |inn| [inn.nutrient.name, inn.impact] }.to_h.sort_by {|k,v| v}.reverse.first(4).to_h
+    @impact_after_4 = illness_nutrients.map { |inn| [inn.nutrient.name, inn.impact] }.to_h.sort_by {|k,v| v}.reverse.drop(4).to_h
+
   end
 
 

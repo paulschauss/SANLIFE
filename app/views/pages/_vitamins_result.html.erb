@@ -6,7 +6,7 @@
         <div class="result-nutrient-each">
           <%# <% nutrients_with_food.each do |nutrient, foods| %>
           <div class="all-card-nutrient">
-            <% impact.each do |nutrient, impact_value| %>
+            <% @impact_before_4.each do |nutrient, impact_value| %>
               <% nutrient = Nutrient.find_by(name: nutrient) %>
               <div class="card-nutrient">
                 <div class="card-nutrient-icon">
@@ -16,12 +16,12 @@
                   <p><%= nutrient.name %></p>
                 </div>
                 <div class="card-nutrient-pourcentage">
-                  <p> <%= impact_value %>%</p>
+                  <p><%= impact_value %>%</p>
                 </div>
               </div>
             <% end %>
           </div>
-          <p>Whilst less important, than the nutrients flagged above <%= stringify(impact) %> also scored highly.</p>
+          <p>Whilst less important, than the nutrients flagged above <%= stringify(@impact_after_4) %> also scored highly.</p>
         </div>
         <div class="result-nutrient-foods">
           <h3><b>Food for the week:</b></h3>
