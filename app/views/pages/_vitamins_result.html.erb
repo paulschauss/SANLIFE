@@ -21,17 +21,19 @@
               </div>
             <% end %>
           </div>
-          <% unless @impact_after_4.empty? %>
-            <p>Whilst less important, than the nutrients flagged above <%= stringify(@impact_after_4) %> also scored highly.</p>
-          <% end %>
+          <div class="card-nutrient-sentence">
+            <% unless @impact_after_4.empty? %>
+              <p>Whilst less important, than the nutrients flagged above <%= stringify(@impact_after_4) %> also scored highly.</p>
+            <% end %>
+          </div>
         </div>
         <div class="result-nutrient-foods">
           <h3><b>Food for the week:</b></h3>
           <p>Below are the key foods that you should try and consume this week. The foods are sorted by the amount of the relevant nutrient listed. Feel free to replace those which you don't like or are alleric to, no hard feelings!</p>
-          <div class="result-nutrient-foods-each row justify-content-center">
+          <div class="row justify-content-center">
             <% nutrients_with_food.each do |nutrient, foods| %>
               <div class="nutrient-food-row">
-                <h3 class="nutrient"><strong><%= nutrient.name %></strong></h3>
+                <h4 class="nutrient"><strong class="whitespace-nowrap"><%= nutrient.name %></strong></h4>
                 <% foods.each do |food| %>
                   <%= render "foods/food_cards", food: food, nutrient: nutrient %>
                 <% end %>
@@ -41,8 +43,8 @@
         </div>
       </div>
       <p>Et voilà! Click ’Export’ to receive a useful summary of your plan above, straight to your inbox.</p>
-      <div data-controller="email">
-        <span data-email-target="button" data-action="click->email#send" class="btn btn-primary">Send me an email</span>
+      <div data-controller="email" class="btn btn-primary">
+        <span data-email-target="button" data-action="click->email#send">Send me an email</span>
         <span data-email-target="loader" class="d-none" >loader...</span>
         <span data-email-target="success" class="d-none" >success :-)</span>
       </div>
