@@ -16,21 +16,21 @@
 }
 
 .btn-home {
-  color: #FFC65A;
+  color: white;
   border: 1px solid #FFC65A;
   padding: 8px 24px;
   border-radius: 50px;
   font-weight: lighter;
   transition: opacity 0.3s ease;
-  background-color: #FF7B00;
+  background-color: #FF7A02;
   text-decoration:none;
 }
 
 .btn-home:hover {
   background: rgba(255, 123, 0, 0.4);
-  color: #E67E22;
-  border: 1px solid #E67E22;
-  background-color: #FFC65A;
+  color: #FF7A02;
+  border: 1px solid #FF7A02;
+  background-color: white;
   text-decoration:none;
 }
 
