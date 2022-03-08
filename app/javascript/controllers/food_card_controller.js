@@ -16,8 +16,4 @@ export default class extends Controller {
       this.cardTarget.outerHTML = data
     })
   }
-
-  connect() {
-    console.log(this.nutrientIdValue)
-  }
 }

@@ -1,5 +1,6 @@
 class SendEmailsController < ApplicationController
   def nutrient_email
+    sleep(1)
     UserMailer.with(user: current_user, food_ids: cookies[:proposed_foods].split(',').map(&:to_i) ).email.deliver_now
 
     # to prevent reload page and lose cookies

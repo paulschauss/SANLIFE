@@ -1,14 +1,27 @@
 import { Controller } from "stimulus"
+import { csrfToken } from "@rails/ujs";
 
 export default class extends Controller {
-  static targets = [ ]
+  static targets = [ 'button', 'loader', 'success' ]
+
+  showLoader() {
+    this.buttonTarget.classList.add('d-none')
+    this.loaderTarget.classList.remove('d-none')
+    this.successTarget.classList.add('d-none')
+  }
+
+  showSuccess() {
+    this.buttonTarget.classList.add('d-none')
+    this.loaderTarget.classList.add('d-none')
+    this.successTarget.classList.remove('d-none')
+  }
 
   send() {
-    fetch('/send_email', { method: 'POST' })
-    // .then(response => response.text())
-    // .then((data) => {
-    //   this.cardTarget.outerHTML = data
-    // })
+    this.showLoader()
+    fetch('/send_email', { method: 'POST' , headers: {
+      "X-CSRF-Token": csrfToken()
+    }})
+    .then(response => this.showSuccess())
   }
 
   connect() {

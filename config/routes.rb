@@ -28,5 +28,7 @@ Rails.application.routes.draw do
     delete :remove, on: :member
   end
 
+  get 'debug', to: 'application#debug'
+
   resources :illness_nutrients, only: [:index]
 end
