@@ -6,43 +6,24 @@ body {
 
 .footer {
   margin-top: auto;
-  background: #F4F4F4;
+  background: #FFF;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 54px;
   padding: 0px 100px;
-  color: #E67E22;
-  padding: 10px 10px 0px 10px;
-}
-.footer-links {
-  display: flex;
-  align-items: center;
+  padding: 12px 52px;
 }
 
-.footer-links a {
-  color: #E67E22;
-  opacity: 0.75;
-  text-decoration: none;
-  font-size: 24px;
-  padding: 0px 10px;
-}
-.footer-links a:hover {
-  opacity: 1;
-  color: #FFC65A;
-}
-.footer .fa-heart {
-  color: #E67E22;
+.heart {
+  color: #FF7B00;
 }
 
-.links-about{
-  color: #FFC65A;
-  opacity: 0.75;
+.logout_link {
   text-decoration: none;
-  font-size: 12px;
-  padding: 0px 10px;
-}
-.links-about:hover {
-  opacity: 1;
-  color: #FFC65A;
+  color: black;
+
+  &:hover {
+    color: #FF7B00;
+    }
 }

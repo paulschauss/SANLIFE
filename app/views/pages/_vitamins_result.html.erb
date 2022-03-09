@@ -2,21 +2,27 @@
   <% unless @current_user.illnesses.empty?  %>
     <div class="result">
       <div class="result-nutrient">
-        <h3><b>The main nutrients that you should prioritise are:</b></h3>
+        <h5>Below are the main vitamins and minerals that may have a positive impact on your concerns.</h5>
+        <p>Certain vitamins and minerals have more <span class="pill">impact</span> than others, so we've calculated their importance across all concerns, if relevant.</p>
         <div class="result-nutrient-each">
-          <%# <% nutrients_with_food.each do |nutrient, foods| %>
           <div class="all-card-nutrient">
-            <% @impact_before_4.each do |nutrient, impact_value| %>
+            <% @impact_before_4.each_with_index do |(nutrient, impact_value), index| %>
               <% nutrient = Nutrient.find_by(name: nutrient) %>
               <div class="card-nutrient">
                 <div class="card-nutrient-icon">
                   <%= image_tag("nutrients_logo/#{nutrient.logo}") %>
                 </div>
                 <div class="card-nutrient-name">
-                  <p><%= nutrient.name %></p>
+                  <div>
+                    <p class="name"><%= nutrient.name %></p>
+                  </div>
+                  <div class="pill">
+                    <p><%= impact_value %>%</p>
+                  </div>
                 </div>
                 <div class="card-nutrient-pourcentage">
-                  <p><%= impact_value %>%</p>
+                  <% sups = ['st', 'nd','rd','th'] %>
+                  <p><%= index + 1%><sup><%= sups[index] %></sup> </p>
                 </div>
               </div>
             <% end %>
@@ -42,7 +48,7 @@
           </div>
         </div>
       </div>
-      <p>Et voilà! Click ’Export’ to receive a useful summary of your plan above, straight to your inbox.</p>
+      <p><em>Et voilà!</em> Click ’Export’ to receive a useful summary of your plan above, straight to your inbox.</p>
       <div data-controller="email" class="btn btn-primary">
         <span data-email-target="button" data-action="click->email#send">Send me an email</span>
         <span data-email-target="loader" class="d-none" >loader...</span>

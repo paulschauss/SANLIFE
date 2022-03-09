@@ -13,7 +13,6 @@ class IllnessNutrientsController < ApplicationController
                                       .where(illness_id: illness_ids)
                                       .group(:nutrient_id)
 
-
     @impact_before_4 = illness_nutrients.map { |inn| [inn.nutrient.name, inn.impact] }.to_h.sort_by {|k,v| v}.reverse.first(4).to_h
     @impact_after_4 = illness_nutrients.map { |inn| [inn.nutrient.name, inn.impact] }.to_h.sort_by {|k,v| v}.reverse.drop(4).to_h
 

@@ -8,8 +8,8 @@ Concentration,Magnesium,60
 Concentration,Vitamin B12,2
 Concentration,Vitamin B6,30
 Concentration,Vitamin B9,8
-Depression,Vitamin B6,30
-Depression,Magnesium,70
+Low mood,Vitamin B6,30
+Low mood,Magnesium,70
 Energy,Magnesium,60
 Energy,Vitamin C,30
 Energy,Vitamin D,10
@@ -34,5 +34,5 @@ Sport,Magnesium,40
 Sport,Protein,50
 Sport,Vitamin D,9
 Sport,Zinc,1
-Stress & Anxiety,Magnesium,65
-Stress & Anxiety,Vitamin B6,35
+Stress,Magnesium,65
+Stress,Vitamin B6,35
