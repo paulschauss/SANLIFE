@@ -3,8 +3,12 @@
   <h2>Find out which foods are best for <i>you</i>.</h2>
   <div class="result">
     <div class="health-concern">
-      <p>Select your particular health concerns (max four): </p>
+
       <div class="health-concern-inputs">
+        <div class="arrow-container">
+          <p class="font-nanu ">Select your particular health concerns</p>
+          <%= render_svg "icons/curved-arrow", style: "", width:"30", height:"30" %>
+        </div>
         <% @illnesses.each do |illness| %>
           <%= render "user_illnesses/user_preferences", illness: illness %>
         <% end %>
