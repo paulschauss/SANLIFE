@@ -1,8 +1,13 @@
 <div class="banner">
+  <%= image_tag 'logo-sanlife/001-leaf.png', class:'logo-sanlife' %>
   <div class="container-home">
-    <h1>Welcome to <strong>SANLIFE</strong></p>
-    <p>Find out which foods are best for <i>you</i>.</H3>
-    <%= link_to "Start Now", preferences_path, class:'btn-home' %>
+    <h1>Welcome to <strong>SANL<span class="style-i">I</span>FE</strong></p>
+    <h2>
+      Find out which foods are best for <i>you</i>
+    </h2>
+    <div class="btn-margin">
+      <%= link_to "Start Now", preferences_path, class:'btn-home' %>
+    </div>
   </div>
   <div class="info">
     <p>Did you know that <strong>vitamin B2</strong> can help treat <strong>migraines</strong> ?</p>
