@@ -1,6 +1,6 @@
 <div class="card2" data-action="click->illness-preferences-results#excludeFood" data-food-id="<%= food.id %>">
   <p class="small"><%= food.name %> </p>
   <div class="go-corner">
-    <span class="go-arrow" data-action="click->food-card#refresh">X</span>
+    <%= image_tag 'reload.png', data: { action:"click->food-card#refresh" } %>
   </div>
 </div>
