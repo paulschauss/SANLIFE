@@ -51,15 +51,15 @@
           </div>
         </div>
       </div>
-      <p><em>Et voilà!</em> Click ’Export’ to receive a useful summary of your plan above, straight to your inbox.</p>
-      <div data-controller="email" class="">
-        <span data-email-target="button" class="button-export" data-action="click->email#send">Email my plan</span>
-        <span data-email-target="loader" class="d-none button-export" >Sending...</span>
-        <span data-email-target="success" class="d-none button-export" >Sent!</span>
+      <div class="good">
+        <p>Good ! Click 'Export' to receive a useful summary of your plan above, straight to your inbox.</p>
       </div>
-      <div class="final-msg">
-        <p>See you next soon!</h3>
+      <div data-controller="email" class="btn btn-primary">
+        <span data-email-target="button" data-action="click->email#send">Send me an email</span>
+        <span data-email-target="loader" class="d-none" >loader...</span>
+        <span data-email-target="success" class="d-none" >success :-)</span>
       </div>
+      <p>See you next soon !</p>
     </div>
   <% end %>
 </div>

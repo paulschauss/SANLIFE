@@ -9,11 +9,6 @@
   filter: invert(47%) sepia(59%) saturate(1884%) hue-rotate(359deg) brightness(104%) contrast(105%);
 }
 
-.style-i:hover {
-  color: #FFF3EB;
-  opacity: 0.2;
-}
-
 .banner .logo-sanlife {
   filter: invert(47%) sepia(59%) saturate(1884%) hue-rotate(359deg) brightness(104%) contrast(105%);
   padding: 16px;
@@ -24,8 +19,7 @@
 }
 
 .banner .logo-sanlife:hover {
-  color: #FFF3EB;
-  opacity: 0.2;
+  filter: invert(47%) sepia(59%) saturate(1884%) hue-rotate(359deg) brightness(104%) contrast(105%);
 }
 
 .banner h1 {
