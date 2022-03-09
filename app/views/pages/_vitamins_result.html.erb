@@ -1,23 +1,22 @@
 <div data-illness-preferences-results-target="results" data-action="refreshResult@window->illness-preferences-results#refresh">
-  <% unless @current_user.illnesses.empty?  %>
+  <% unless current_user.illnesses.empty?  %>
     <div class="result">
       <div class="result-nutrient">
         <h5>Below are the main vitamins and minerals that may have a positive impact on your concerns.</h5>
         <p>Certain vitamins and minerals have more <span class="pill">impact</span> than others, so we've calculated their importance across all concerns, if relevant.</p>
         <div class="result-nutrient-each">
           <div class="all-card-nutrient">
-            <% @impact_before_4.each_with_index do |(nutrient, impact_value), index| %>
-              <% nutrient = Nutrient.find_by(name: nutrient) %>
+            <% @illness_nutrients.first(4).each_with_index do |illness_nutrient, index| %>
               <div class="card-nutrient">
                 <div class="card-nutrient-icon">
-                  <%= image_tag("nutrients_logo/#{nutrient.logo}") %>
+                  <%= image_tag("nutrients_logo/#{illness_nutrient.nutrient.logo}") %>
                 </div>
                 <div class="card-nutrient-name">
                   <div>
-                    <p class="name"><%= nutrient.name %></p>
+                    <p class="name"><%= illness_nutrient.nutrient.name %></p>
                   </div>
                   <div class="pill">
-                    <p><%= impact_value %>%</p>
+                    <p><%= illness_nutrient.impact %>%</p>
                   </div>
                 </div>
                 <div class="card-nutrient-pourcentage">
@@ -28,8 +27,8 @@
             <% end %>
           </div>
           <div class="card-nutrient-sentence">
-            <% unless @impact_after_4.empty? %>
-              <p>Whilst less important, than the nutrients flagged above <%= stringify(@impact_after_4) %> also scored highly.</p>
+            <% unless @illness_nutrients.size >=4 && @illness_nutrients[4..-1].empty? %>
+              <p>Whilst less important, than the nutrients flagged above <%= stringify(@illness_nutrients[4..-1]) %> also scored highly.</p>
             <% end %>
           </div>
         </div>
@@ -37,7 +36,7 @@
           <h3><b>Food for the week:</b></h3>
           <p>Below are the key foods that you should try and consume this week. The foods are sorted by the amount of the relevant nutrient listed. Feel free to replace those which you don't like or are alleric to, no hard feelings!</p>
           <div class="row justify-content-center result-nutrient-foods-rows">
-            <% nutrients_with_food.each do |nutrient, foods| %>
+            <% @nutrients_with_food.first(4).each do |nutrient, foods| %>
               <div class="nutrient-food-row">
                 <div class="nutrient">
                   <h4 class="whitespace-nowrap nutrient-name">
@@ -60,7 +59,7 @@
         <span data-email-target="loader" class="d-none" >loader...</span>
         <span data-email-target="success" class="d-none" >success :-)</span>
       </div>
-      <p>See you next week !</p>
+      <p>See you next soon !</p>
     </div>
   <% end %>
 </div>
