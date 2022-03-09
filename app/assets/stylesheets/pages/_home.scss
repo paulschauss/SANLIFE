@@ -3,6 +3,9 @@
   background-size: cover;
   background-position: center;
   padding: 89px;
+  background-color: #044425;
+  color: white;
+  height: 100vh;
 }
 
 .style-i {
@@ -47,7 +50,6 @@
 
 .banner .btn-home {
   color: #FFF3EB;
-  border: 1px solid #FFC65A;
   padding: 18px 42px;
   border-radius: 8px;
   font-size: 24px;
@@ -63,7 +65,6 @@
 .banner .btn-home:hover {
   background: rgba(255, 123, 0, 0.4);
   color: #FF7A02;
-  border: 1px solid #FF7A02;
   background-color: #FFF3EB;
   text-decoration:none;
 }
@@ -74,4 +75,5 @@
 
 .info {
   margin-top: 116px;
+  text-align: justify;
 }
