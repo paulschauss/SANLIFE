@@ -41,6 +41,10 @@ p {
   font-size: 16px;
 }
 
+.font-green {
+  color: #044425;
+}
+
 .logo-sanlife-preferences {
   filter: invert(47%) sepia(59%) saturate(1884%) hue-rotate(359deg) brightness(104%) contrast(105%);
   padding: 14px;
@@ -117,7 +121,8 @@ p {
 }
 
 .good {
-  padding: 24px;
+  padding-top: 24px;
+  margin-bottom: 0;
 }
 
 .arrow-container {
