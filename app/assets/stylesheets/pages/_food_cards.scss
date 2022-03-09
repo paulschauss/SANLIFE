@@ -8,8 +8,6 @@
   width: 100%;
   border-radius: 4px;
   padding: 12px;
-  padding-left: 62px;
-  padding-right: 62px;
 }
 
 .line-height {
@@ -18,17 +16,22 @@
 }
 
 .nutrient {
-  align-items: center;
+  display: grid;
+  place-items: center;
   font-size: 16px;
   font-weight: bold;
-  padding: 34px;
-  margin: 9px;
   border-right: 2px solid #f2f8f9;
+  margin-bottom: 0;
+  width: 25%;
+  margin: 0 auto;
+  margin-right: 11px;
+
+  .nutrient-name {
+    font-size: 23px;
+    margin: 0;
+  }
 }
 
-.nutrient strong {
-  font-size: 27px;
-}
 
 .go-corner {
   display: flex;
@@ -50,6 +53,16 @@
     opacity: 1;
     width: 42px;
     height: 42px;
+
+    img {
+      filter: invert(92%) sepia(100%) saturate(27%) hue-rotate(253deg) brightness(108%) contrast(100%);
+      width: 25px;
+    }
+  }
+
+  img {
+    filter: invert(0%) sepia(90%) saturate(7460%) hue-rotate(354deg) brightness(104%) contrast(109%);
+    width: 23px;
   }
 }
 
@@ -72,7 +85,7 @@
   width: 174px;
   background-color: #FFF4EB;
   border-radius: 4px;
-  padding: 52px 16px;
+  padding: 48px 16px;
   margin: 6px;
   text-decoration: none;
   z-index: 0;
