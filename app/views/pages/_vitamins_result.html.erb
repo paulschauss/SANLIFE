@@ -36,10 +36,14 @@
         <div class="result-nutrient-foods">
           <h3><b>Food for the week:</b></h3>
           <p>Below are the key foods that you should try and consume this week. The foods are sorted by the amount of the relevant nutrient listed. Feel free to replace those which you don't like or are alleric to, no hard feelings!</p>
-          <div class="row justify-content-center">
+          <div class="row justify-content-center result-nutrient-foods-rows">
             <% nutrients_with_food.each do |nutrient, foods| %>
               <div class="nutrient-food-row">
-                <h4 class="nutrient"><strong class="whitespace-nowrap"><%= nutrient.name %></strong></h4>
+                <div class="nutrient">
+                  <h4 class="whitespace-nowrap nutrient-name">
+                    <strong><%= nutrient.name %></strong>
+                  </h4>
+                </div>
                 <% foods.each do |food| %>
                   <%= render "foods/food_cards", food: food, nutrient: nutrient %>
                 <% end %>
