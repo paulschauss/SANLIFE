@@ -1,21 +1,19 @@
 .button-export {
   border-radius: 8px;
-  background-color: #FF7B00;
-  padding: 20px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-size: 18px;
-  line-height: 22px;
-  margin: 9px;
-  justify-content: center;
-  cursor: pointer;
+    background-color: #FF7B00;
+    color: #fff;
+    padding: 10px 10px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Montserrat;
+    justify-content: center;
+    cursor: pointer;
 
-  .button-export:hover {
+  &:hover {
     opacity: .6;
   }
+}
 
-  .loader {
-
-  }
-
+.final-msg {
+  margin-top: 12px;
 }
