@@ -31,14 +31,32 @@ h3 {
   font-family: Montserrat;
   font-weight: 400;
   font-size: 28px;
-  text-align: left;
+  text-align: center;
   margin-top: 48px;
 }
 
 p {
   font-family: Montserrat;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
+}
+
+.logo-sanlife-preferences {
+  filter: invert(47%) sepia(59%) saturate(1884%) hue-rotate(359deg) brightness(104%) contrast(105%);
+  padding: 14px;
+  margin: -50px;
+  margin-left: 50px;
+  margin-top: 33px;
+  width: 64px;
+  height: 64px;
+}
+
+.logo-sanlife-preferences:hover {
+  filter: invert(21%) sepia(25%) saturate(3698%) hue-rotate(97deg) brightness(93%) contrast(104%);
+}
+
+.style-i {
+  filter: invert(47%) sepia(59%) saturate(1884%) hue-rotate(359deg) brightness(104%) contrast(105%);
 }
 
 .result {
@@ -50,11 +68,10 @@ p {
   margin-bottom: 48px;
 
   p {
-    text-align: left;
+    text-align: center;
     margin-top: 48px;
   }
 }
-
 
 .health-concern-inputs {
   border: 1px solid #FFC085;
@@ -85,7 +102,7 @@ p {
 .result-nutrient {
 
   p {
-    text-align: left;
+    text-align: center;
     font-size: 16px;
   }
 }
@@ -95,4 +112,8 @@ p {
   margin-top: 38px;
   margin-left: 162px;
   margin-right: 162px;
+}
+
+.good {
+  padding: 24px;
 }
