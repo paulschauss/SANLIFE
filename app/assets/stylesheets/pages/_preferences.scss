@@ -120,12 +120,15 @@ p {
   margin-bottom: 0;
 }
 
-.arrow-container {
+.arrow {
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 4rem;
+}
+
+.arrow-container-select {
   top: -5rem;
   left: -13rem;
 
@@ -133,5 +136,27 @@ p {
     margin-top: 1rem;
     font-family: 'Nanum Pen Script';
     font-size: 2.5rem;
+  }
+
+  svg {
+    transform: rotate(187deg) scaleX(-1) translate(9px, -8px);
+  }
+}
+
+.arrow-container-feel {
+  top: -5rem;
+  left: 3rem;
+  width: max-content;
+
+  p {
+    margin-top: 1rem;
+    font-family: 'Nanum Pen Script';
+    font-size: 1.3rem;
+    text-align: end;
+    line-height: 1em;
+  }
+
+  svg {
+    transform: rotate(523deg) scaleX(1) translate(-74px, -50px);
   }
 }
