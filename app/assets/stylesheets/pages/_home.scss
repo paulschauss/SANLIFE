@@ -14,7 +14,7 @@
 }
 
 .box-1 {
-  padding: 30px;
+  padding: 72px;
   padding-bottom: 98px;
   text-align:left;
   margin-left: 24px;
@@ -50,42 +50,33 @@
 
 .plate-text {
   position:absolute;
-  top: 1rem;
-  right: 1rem;
+  top: 4rem;
+  right: 30rem;
 }
 
 .arrow-container-home {
-  position: absolute;
-  align-items: center;
-  justify-content: center;
-  font-size: 4rem;
-  top: 3rem;
-  left: -16rem;
-}
-
-.handwritten-text {
   position: relative;
+  font-size: 4rem;
 }
 
 .font-nanu {
   margin-top: 1rem;
   font-family: 'Nanum Pen Script';
   font-size: 2rem;
+  width: max-content;
 }
 
 .home-arrow {
   position:absolute;
-  top: 0rem;
-  right: -13rem;
+  top: 2rem;
+  right:-12rem;
+  transform: rotate(5deg);
 }
 
 #home-definition {
   font-family: Montserrat;
   width: 220px;
   text-align: justify;
-  position: absolute;
-  top: 2.8rem;
-  left: -16rem;
 
   .vitamin-def-title {
     font-size: 18px;
