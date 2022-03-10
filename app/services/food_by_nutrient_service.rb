@@ -11,7 +11,7 @@ class FoodByNutrientService < ApplicationService
       foods = nutrient.foods
                       .where.not(id: @exclude_food_ids)
                       .order(measure_value: :desc)
-                      .limit(4)
+                      .limit(5)
       [nutrient, foods]
     end.to_h
   end
