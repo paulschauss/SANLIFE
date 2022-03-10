@@ -2,7 +2,8 @@
   <% unless current_user.illnesses.empty?  %>
     <div class="result">
       <div class="result-nutrient">
-        <h5>Below are the main vitamins and minerals that may have a positive impact on your concerns.</h5>
+        <h3>Vitamins & Minerals</h3>
+        <p>Below are the main vitamins and minerals that may have a positive impact on your concerns.</p>
         <p>Certain vitamins and minerals have more <span class="pill">impact</span> than others, so we've calculated their importance across all concerns, if relevant.</p>
         <div class="result-nutrient-each">
           <div class="all-card-nutrient">
@@ -33,18 +34,19 @@
           </div>
         </div>
         <div class="result-nutrient-foods">
-          <h3><b>Food for the week:</b></h3>
-          <p>Below are the key foods that you should try and consume this week. The foods are sorted by the amount of the relevant nutrient listed. Feel free to replace those which you don't like or are alleric to, no hard feelings!</p>
+          <h3>Food for the week:</h3>
+          <p>Below are the key foods that you should try and consume this week. The foods are</p>
+          <p>sorted by the amount of the relevant nutrient listed.</p>
           <div class="row justify-content-center result-nutrient-foods-rows">
-            <% @nutrients_with_food.first(4).each do |nutrient, foods| %>
+            <% @nutrients_with_food.first(4).each_with_index do |(nutrient, foods), nutrient_index| %>
               <div class="nutrient-food-row">
                 <div class="nutrient">
                   <h4 class="whitespace-nowrap nutrient-name">
                     <strong><%= nutrient.name %></strong>
                   </h4>
                 </div>
-                <% foods.each do |food| %>
-                  <%= render "foods/food_cards", food: food, nutrient: nutrient %>
+                <% foods.each_with_index do |food, food_index| %>
+                  <%= render "foods/food_cards", food: food, nutrient: nutrient, legend: (nutrient_index.zero? && food_index == 3) %>
                 <% end %>
               </div>
             <% end %>
@@ -52,8 +54,10 @@
         </div>
       </div>
       <div class="good">
-        <p>Click 'Export' to receive a useful summary of your plan above, straight to your inbox.</p>
-        <p>See you soon !</p>
+        <div class="arrow arrow-container-mail">
+          <%= render_svg "icons/curved-arrow", style: "", width:"30", height:"30" %>
+          <p class="font-nanu font-green">Enter your email to receive a useful summary of your plan, straight to your inbox.</p>
+        </div>
       </div>
       <div data-controller="email">
         <span data-email-target="button" class="button-export" data-action="click->email#send">Email my plan</span>

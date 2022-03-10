@@ -29,16 +29,19 @@ h2 {
 
 h3 {
   font-family: Montserrat;
-  font-weight: 400;
+  font-weight: 800;
   font-size: 28px;
-  text-align: center;
+  text-align: left;
   margin-top: 48px;
+  margin-bottom: 1rem;
 }
 
 p {
   font-family: Montserrat;
   font-weight: 400;
   font-size: 16px;
+  text-align: left;
+  margin: 0;
 }
 
 .font-green {
@@ -57,10 +60,6 @@ p {
 
 .logo-sanlife-preferences:hover {
   filter: invert(21%) sepia(25%) saturate(3698%) hue-rotate(97deg) brightness(93%) contrast(104%);
-}
-
-.style-i {
-  filter: invert(47%) sepia(59%) saturate(1884%) hue-rotate(359deg) brightness(104%) contrast(105%);
 }
 
 .result {
@@ -105,19 +104,15 @@ p {
   text-align: left;
 }
 
-.result-nutrient {
-
-  p {
-    text-align: center;
-    font-size: 16px;
-  }
+.result-nutrient p {
+  font-size: 16px;
 }
 
 
 .result-nutrient-foods-rows {
   margin-top: 38px;
-  margin-left: 162px;
-  margin-right: 162px;
+  margin-left: 18px;
+  margin-right: 18px;
 }
 
 .good {
@@ -125,18 +120,61 @@ p {
   margin-bottom: 0;
 }
 
-.arrow-container {
+.arrow {
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 4rem;
-  top: -4rem;
-  left: -9rem;
+}
+
+.arrow-container-select {
+  top: -5rem;
+  left: -13rem;
 
   p {
     margin-top: 1rem;
     font-family: 'Nanum Pen Script';
-    font-size: 2rem;
+    font-size: 2.5rem;
+  }
+
+  svg {
+    transform: rotate(187deg) scaleX(-1) translate(9px, -8px);
+  }
+}
+
+.arrow-container-feel {
+  top: -5rem;
+  left: 3rem;
+  width: max-content;
+
+  p {
+    margin-top: 1rem;
+    font-family: 'Nanum Pen Script';
+    font-size: 1.3rem;
+    text-align: end;
+    line-height: 1em;
+  }
+
+  svg {
+    transform: rotate(523deg) scaleX(1) translate(-74px, -50px);
+  }
+}
+
+.arrow-container-mail {
+  top: 113rem;
+  left: 0rem;
+  width: max-content;
+
+  p {
+    margin-top: 1rem;
+    font-family: 'Nanum Pen Script';
+    font-size: 1.3rem;
+    text-align: end;
+    line-height: 1em;
+  }
+
+  svg {
+    transform: rotate(523deg) scaleX(1) translate(-74px, -50px);
   }
 }

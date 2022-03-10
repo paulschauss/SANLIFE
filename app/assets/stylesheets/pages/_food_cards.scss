@@ -1,5 +1,4 @@
 .nutrient-food-row {
-  overflow: hidden;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
@@ -23,7 +22,7 @@
   border-right: 2px solid #f2f8f9;
   margin-bottom: 0;
   width: 25%;
-  margin: 0 auto;
+  margin: 0 0;
   margin-right: 11px;
 
   .nutrient-name {
@@ -38,8 +37,8 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  width: 36px;
-  height: 36px;
+  width: 42px;
+  height: 42px;
   overflow: hidden;
   top: 0;
   right: 0;
@@ -48,22 +47,22 @@
   border-radius: 0 4px 0 32px;
   cursor: pointer;
 
-  &:hover {
-    transition: all 0.2s ease-out;
-    opacity: 1;
-    width: 42px;
-    height: 42px;
-
-    img {
-      filter: invert(92%) sepia(100%) saturate(27%) hue-rotate(253deg) brightness(108%) contrast(100%);
-      width: 25px;
-    }
-  }
-
   img {
     filter: invert(92%) sepia(100%) saturate(27%) hue-rotate(253deg) brightness(108%) contrast(100%);
-    width: 16px;
-    margin-left: 8px;
+    margin-left: 6px;
+    margin-top: -2px;
+    width: 23px;
+    transition: all 0.2s ease-out;
+  }
+
+  &:hover {
+    opacity: 1;
+    img {
+      filter: invert(92%) sepia(100%) saturate(27%) hue-rotate(253deg) brightness(108%) contrast(100%);
+      width: 24px;
+      transform: rotate(0.2turn);
+      transition: all 0.35s ease-out;
+    }
   }
 }
 
@@ -90,7 +89,6 @@
   margin: 6px;
   text-decoration: none;
   z-index: 0;
-  overflow: hidden;
   border: 1px solid #f2f8f9;
   height: 80px;
 
