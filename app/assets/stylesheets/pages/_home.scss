@@ -6,6 +6,7 @@
   background-color: #044425;
   color: white;
   height: 100vh;
+  width: 100%
 }
 
 .style-i {
@@ -68,6 +69,8 @@
 }
 
 .info {
-  margin-top: 116px;
+  // margin-top: 116px;
   text-align: justify;
+  max-width: 80%;
+  margin: 58px auto;
 }
