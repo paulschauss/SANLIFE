@@ -27,7 +27,7 @@
             <% end %>
           </div>
           <div class="card-nutrient-sentence">
-            <% unless @illness_nutrients.size >=4 && @illness_nutrients[4..-1].empty? %>
+            <% if @illness_nutrients.size >=4 && @illness_nutrients[4..-1].any? %>
               <p>Whilst less important, than the nutrients flagged above <%= stringify(@illness_nutrients[4..-1]) %> also scored highly.</p>
             <% end %>
           </div>
