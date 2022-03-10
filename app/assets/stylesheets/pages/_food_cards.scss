@@ -38,8 +38,8 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  width: 36px;
-  height: 36px;
+  width: 42px;
+  height: 42px;
   overflow: hidden;
   top: 0;
   right: 0;
@@ -48,22 +48,22 @@
   border-radius: 0 4px 0 32px;
   cursor: pointer;
 
-  &:hover {
-    transition: all 0.2s ease-out;
-    opacity: 1;
-    width: 42px;
-    height: 42px;
-
-    img {
-      filter: invert(92%) sepia(100%) saturate(27%) hue-rotate(253deg) brightness(108%) contrast(100%);
-      width: 25px;
-    }
-  }
-
   img {
     filter: invert(92%) sepia(100%) saturate(27%) hue-rotate(253deg) brightness(108%) contrast(100%);
-    width: 16px;
-    margin-left: 8px;
+    margin-left: 6px;
+    margin-top: -2px;
+    width: 23px;
+    transition: all 0.2s ease-out;
+  }
+
+  &:hover {
+    opacity: 1;
+    img {
+      filter: invert(92%) sepia(100%) saturate(27%) hue-rotate(253deg) brightness(108%) contrast(100%);
+      width: 24px;
+      transform: rotate(0.2turn);
+      transition: all 0.35s ease-out;
+    }
   }
 }
 
