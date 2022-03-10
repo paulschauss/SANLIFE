@@ -41,6 +41,13 @@
   }
 }
 
+.pouf{
+  vertical-align: baseline;
+  margin: 0 4px;
+}
+.box-1 h1{
+  vertical-align: baseline;
+}
 .banner .logo-sanlife {
   filter: invert(47%) sepia(59%) saturate(1884%) hue-rotate(359deg) brightness(104%) contrast(105%);
   padding: 16px;
@@ -65,8 +72,8 @@
 
 .fork{
   position: absolute;
-  top: -6rem;
-  left: -45rem;
+  top: 0rem;
+  left: 0rem;
 }
 
 .arrow-container-home {

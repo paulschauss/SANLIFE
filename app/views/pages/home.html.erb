@@ -1,6 +1,6 @@
 <div class="home-page-title">
   <div class="box-1">
-    <h1>Welcome to <br><span>SANLIFE</span></h1>
+    <h1>Welcome to <br> SANLIFE<%= image_tag("pea-logo.svg", class: 'pouf') %>me</h1>
 
     <h4>Find out which foods are best for <i>you</i>.</h4>
     <p class="text-box">Before thinking about food supplements, why not consider <em>actual food</em>?
@@ -10,12 +10,14 @@
       <%= link_to "Start Now", preferences_path, class:'btn-home' %>
     </div>
   </div>
+
+  <div class="fork">
+    <%= render_svg "noun-fork-3649165" %>
+  </div>
+
   <div class="plate-drawing">
     <%= image_tag("PLATE.png") %>
     <div class="plate-text">
-      <div class="fork">
-        <%= render_svg "noun-fork-3649165", style: "", width:"280", height:"420" %>
-      </div>
       <div class="arrow-container-home">
           <p class="font-nanu">Boost your immunity!</p>
           <div class="home-arrow">
