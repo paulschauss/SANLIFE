@@ -6,13 +6,12 @@ body {
 
 .footer {
     margin-top: auto;
-    background: #FFF4EB;
+    border-top: 1px solid #fff4eb;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 40px;
     padding: 25px;
-    margin-top: 25px;
 }
 
 .github {
@@ -41,7 +40,7 @@ body {
 .logout_link {
   text-decoration: none;
   opacity: 0.8;
-  color: black;
+  color: white;
 
   &:hover {
     color: #FF7B00;
