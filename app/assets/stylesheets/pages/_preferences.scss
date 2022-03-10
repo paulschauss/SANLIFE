@@ -116,7 +116,7 @@ p {
 }
 
 .good {
-  padding-top: 24px;
+  padding-top: 0px;
   margin-bottom: 0;
 }
 
@@ -129,13 +129,13 @@ p {
 }
 
 .arrow-container-select {
-  top: -5rem;
-  left: -13rem;
+  top: -4rem;
+  left: -10rem;
 
   p {
     margin-top: 1rem;
     font-family: 'Nanum Pen Script';
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   svg {
@@ -144,14 +144,14 @@ p {
 }
 
 .arrow-container-feel {
-  top: -5rem;
-  left: 4rem;
+  top: -5.2rem;
+  left: 3rem;
   width: max-content;
 
   p {
     margin-top: 1rem;
     font-family: 'Nanum Pen Script';
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     text-align: end;
     line-height: 1em;
   }
@@ -162,19 +162,20 @@ p {
 }
 
 .arrow-container-mail {
-  top: 113rem;
-  left: 0rem;
-  width: max-content;
+  top: 3.15rem;
+  left: 8rem;
+  width: 24rem;
+  position: absolute;
 
   p {
     margin-top: 1rem;
     font-family: 'Nanum Pen Script';
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     text-align: end;
     line-height: 1em;
   }
 
   svg {
-    transform: rotate(523deg) scaleX(1) translate(-74px, -50px);
+    transform: rotate(1082deg) scaleX(1) translate(393px, -20px);
   }
 }
