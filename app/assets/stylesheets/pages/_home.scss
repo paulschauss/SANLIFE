@@ -3,74 +3,126 @@
   background-size: cover;
   background-position: center;
   padding: 89px;
-  background-color: #044425;
-  color: white;
+  background-color: white;
   height: 100vh;
   width: 100%
 }
 
-.style-i {
-  filter: invert(47%) sepia(59%) saturate(1884%) hue-rotate(359deg) brightness(104%) contrast(105%);
+.home-page-title {
+  display:flex;
+  justify-content: space-between;
 }
 
-.banner .logo-sanlife {
-  filter: invert(47%) sepia(59%) saturate(1884%) hue-rotate(359deg) brightness(104%) contrast(105%);
-  padding: 16px;
-  margin: -21px;
-  margin-left: 504px;
-  width: 64px;
-  height: 64px;
+.box-1 {
+  padding: 30px;
+  padding-bottom: 98px;
+  text-align:left;
+  margin-left: 24px;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  h1 {
+    text-align: left;
+  }
+  h4 {
+    text-align: left;
+    padding-top: 20px;
+  }
+  p {
+    text-align: left;
+  }
+
+  .text-box{
+    width: 664px;
+    text-align: justify;
+    padding-top: 8px;
+  }
 }
 
-.banner .logo-sanlife:hover {
-  filter: invert(47%) sepia(59%) saturate(1884%) hue-rotate(359deg) brightness(104%) contrast(105%);
+.plate-drawing {
+  position:relative;
+  img {
+    height: 100vh;
+  }
 }
 
-.banner h1 {
+.plate-text {
+  position:absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.arrow-container-home {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  top: 3rem;
+  left: -16rem;
+}
+
+.handwritten-text {
+  position: relative;
+}
+
+.font-nanu {
+  margin-top: 1rem;
+  font-family: 'Nanum Pen Script';
+  font-size: 2rem;
+}
+
+.home-arrow {
+  position:absolute;
+  top: 0rem;
+  right: -13rem;
+}
+
+#home-definition {
   font-family: Montserrat;
-  font-size: 64px;
-  font-weight: bold;
-  margin-top: -8px;
+  width: 220px;
+  text-align: justify;
+  position: absolute;
+  top: 2.8rem;
+  left: -16rem;
+
+  .vitamin-def-title {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 4px;
+    text-align: justify;
+  }
+
+  .vitamin-def-noun {
+    font-size: 12px;
+    text-align: justify;
+  }
+
+  .vitamin-def {
+    font-size: 12px;
+    text-align: justify;
+  }
 }
 
-.banner h2 {
-  font-family: Montserrat;
-  margin-top: 36px;
+.button-home {
+  text-align: left;
+  margin-top: 40px;
 }
-
-.banner p {
-  font-family: Montserrat;
-  font-size: 20px;
-}
-
-.banner .btn-home {
+ .btn-home {
   color: #FFF3EB;
   padding: 18px 42px;
   border-radius: 8px;
   font-size: 24px;
-  line-height: 22px;
   font-weight: lighter;
   transition: opacity 0.3s ease;
   background-color: #FF7A02;
   text-decoration:none;
-  margin: 10px;
-  margin-top: 10px;
 }
-
-.banner .btn-home:hover {
+ .btn-home:hover {
   background: rgba(255, 123, 0, 0.4);
   color: #FF7A02;
   background-color: #FFF3EB;
   text-decoration:none;
-}
-
-.btn-margin  {
-  margin-top: 116px;
-}
-
-.info {
-  // margin-top: 116px;
-  text-align: justify;
-  max-width: 80%;
-  margin: 58px auto;
+  border: 2px solid #ff7a02;
 }
