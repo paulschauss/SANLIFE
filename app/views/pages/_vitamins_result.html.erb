@@ -2,7 +2,8 @@
   <% unless current_user.illnesses.empty?  %>
     <div class="result">
       <div class="result-nutrient">
-        <h5>Below are the main vitamins and minerals that may have a positive impact on your concerns.</h5>
+        <h3>Vitamins & Minerals</h3>
+        <p>Below are the main vitamins and minerals that may have a positive impact on your concerns.</p>
         <p>Certain vitamins and minerals have more <span class="pill">impact</span> than others, so we've calculated their importance across all concerns, if relevant.</p>
         <div class="result-nutrient-each">
           <div class="all-card-nutrient">
@@ -33,7 +34,7 @@
           </div>
         </div>
         <div class="result-nutrient-foods">
-          <h3><b>Food for the week:</b></h3>
+          <h3>Food for the week:</h3>
           <p>Below are the key foods that you should try and consume this week. The foods are sorted by the amount of the relevant nutrient listed. Feel free to replace those which you don't like or are alleric to, no hard feelings!</p>
           <div class="row justify-content-center result-nutrient-foods-rows">
             <% @nutrients_with_food.first(4).each do |nutrient, foods| %>
