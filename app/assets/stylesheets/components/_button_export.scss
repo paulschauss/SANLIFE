@@ -1,15 +1,35 @@
 .button-export {
-  border-radius: 8px;
+    border-radius: 5px;
     background-color: #FF7B00;
     color: #fff;
-    padding: 10px 10px;
-    font-size: 18px;
-    font-weight: 600;
+    padding: 4px 36px;
+    font-size: 20px;
+    font-weight: 500;
     font-family: Montserrat;
     justify-content: center;
     cursor: pointer;
+    display: inline-table;
+    height: 30px;
+    margin-top: 0px;
+    margin-left: -14px;
 
   &:hover {
     opacity: .6;
   }
+}
+
+.add-email {
+  padding: 16px;
+  margin: 6px;
+}
+
+.export {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-mail {
+  border-radius: 5px;
+  padding: 4px 46px;
 }

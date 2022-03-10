@@ -32,18 +32,18 @@ nutrient_data = {
 }
 
 nutrient_logo = {
-  "Vitamin B12" => '001-fish.png',
+  "Vitamin B12" => '009-eggs.png',
   "Vitamin C" => '010-orange.png',
-  "Vitamin D" => '007-peas.png',
-  "Vitamin B6" => '006-meat.png',
-  "Potassium" => '012-avocado.png',
-  "Iron" => '011-broccoli.png',
-  "Magnesium" => '003-spinach.png',
-  "Zinc" => '004-cheese.png',
+  "Vitamin D" => '001-fish.png',
+  "Vitamin B6" => '007-peas.png',
+  "Potassium" => '011-broccoli.png',
+  "Iron" => '003-spinach.png',
+  "Magnesium" => '013-amande.png',
+  "Zinc" => '006-meat.png',
   "Protein" => '005-chicken-leg.png',
-  "Calcium" => '008-milk.png',
+  "Calcium" => '004-cheese.png',
   "Vitamin B9" => '002-cabbage.png',
-  "Vitamin E" => '009-eggs.png'
+  "Vitamin E" => '012-avocado.png'
 }
 
 puts "\n\n"
