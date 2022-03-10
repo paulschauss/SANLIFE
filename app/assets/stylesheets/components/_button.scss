@@ -10,6 +10,7 @@
 }
 
 .btn-preferences:hover {
+  transition: all 0.35s ease-out;
   transform: rotate(0.01turn);
 }
 
