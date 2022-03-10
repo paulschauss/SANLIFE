@@ -10,16 +10,16 @@
 }
 
 .btn-preferences:hover {
-  background: rgba(255, 123, 0, 0.4);
+  transform: rotate(0.01turn);
 }
 
 .btn-active {
-background-color: #FF7B00;
-color: white;
-font-weight: 600;
+  background-color: #FF7B00;
+  color: white;
+  font-weight: 600;
 }
 .btn-inactive {
-background-color: #FFF4EB;
-color: black;
-font-weight: 400;
+  background-color: #FFF4EB;
+  color: black;
+  font-weight: 400;
 }
