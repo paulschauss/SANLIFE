@@ -5,14 +5,33 @@ body {
 }
 
 .footer {
-  margin-top: auto;
-  background: #FFF;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 54px;
-  padding: 10px 10px 0px 10px;
+    margin-top: auto;
+    background: #FFF4EB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    padding: 25px;
+    margin-top: 25px;
+}
 
+.github {
+  width: 27px;
+  opacity: 0.8;
+  text-decoration: none;
+
+  a {
+    vertical-align: middle;
+  }
+
+  img {
+    vertical-align: middle;
+    padding-bottom: 0.2rem;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .heart {
@@ -21,6 +40,7 @@ body {
 
 .logout_link {
   text-decoration: none;
+  opacity: 0.8;
   color: black;
 
   &:hover {
