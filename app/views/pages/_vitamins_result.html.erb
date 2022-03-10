@@ -54,8 +54,10 @@
         </div>
       </div>
       <div class="good">
-        <p>Click 'Export' to receive a useful summary of your plan above, straight to your inbox.</p>
-        <p>See you soon !</p>
+        <div class="arrow arrow-container-mail">
+          <%= render_svg "icons/curved-arrow", style: "", width:"30", height:"30" %>
+          <p class="font-nanu font-green">Enter your email to receive a useful summary of your plan, straight to your inbox.</p>
+        </div>
       </div>
       <div data-controller="email">
         <span data-email-target="button" class="button-export" data-action="click->email#send">Email my plan</span>

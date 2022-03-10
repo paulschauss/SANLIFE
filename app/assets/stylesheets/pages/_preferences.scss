@@ -160,3 +160,21 @@ p {
     transform: rotate(523deg) scaleX(1) translate(-74px, -50px);
   }
 }
+
+.arrow-container-mail {
+  top: 113rem;
+  left: 0rem;
+  width: max-content;
+
+  p {
+    margin-top: 1rem;
+    font-family: 'Nanum Pen Script';
+    font-size: 1.3rem;
+    text-align: end;
+    line-height: 1em;
+  }
+
+  svg {
+    transform: rotate(523deg) scaleX(1) translate(-74px, -50px);
+  }
+}
