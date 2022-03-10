@@ -60,9 +60,14 @@
         </div>
       </div>
       <div data-controller="email">
-        <span data-email-target="button" class="button-export" data-action="click->email#send">Email my plan</span>
-        <span data-email-target="loader" class="d-none button-export" >Sending...</span>
-        <span data-email-target="success" class="d-none button-export" >Sent!</span>
+      <div class="export">
+        <div class="add-email">
+          <input type="text" name="mail" placeholder="exemple@sanlife.com" class="input-mail"><br>
+        </div>
+          <span data-email-target="button" class="button-export" data-action="click->email#send">Export</span>
+          <span data-email-target="loader" class="d-none button-export" >Sending...</span>
+          <span data-email-target="success" class="d-none button-export" >Sent!</span>
+        </div>
       </div>
     </div>
   <% end %>
