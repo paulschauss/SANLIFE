@@ -1,20 +1,38 @@
-<div class="banner">
-  <div class="container-home">
-    <h1 style="position:relative">Welcome to SANLIFE</p>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <lottie-player src="<%= asset_path('lottie_files/toto.json') %>"  background="transparent"  speed="0.3"  style="position:absolute; top:32rem; left:68rem;  width: 300px; height: 300px;"  loop autoplay></lottie-player>
-    <h2>
-      Find out which foods are best for <i>you</i>.
-    </h2>
-    <div class="btn-margin">
+<div class="home-page-title">
+  <div class="box-1">
+    <h1>Welcome to <br><span>SANLIFE</span></h1>
+
+    <h4>Find out which foods are best for <i>you</i>.</h4>
+    <p class="text-box">Before thinking about food supplements, why not consider <em>actual food</em>?
+    But how do you know which foods contain the correct vitamins and minerals?
+    Let's find out!</p>
+    <div class="button-home">
       <%= link_to "Start Now", preferences_path, class:'btn-home' %>
     </div>
   </div>
-  <div class="info">
-    <p>Did you know that <strong>vitamin B2</strong> can help treat migraines ?
-    Or that <strong>vitamin A</strong> can counter hair loss ?</p>
-    <p>Before thinking about food supplements, why not consider <em>actual food</em>?
-    But how do you know which foods contain the correct vitamins and minerals?
-    Let's find out!</p>
-  </div>
+  <div class="plate-drawing">
+    <%= image_tag("PLATE.png") %>
+    <div class="plate-text">
+      <div class="arrow-container-home">
+          <p class="font-nanu">Boost your immunity!</p>
+          <div class="home-arrow">
+            <%= render_svg "icons/curved-arrow-home", style: "", width:"200", height:"180" %>
+          </div>
+          <div id="home-definition">
+            <p class="vitamin-def-title">Vitamin C</>
+            <p class="vitamin-def-noun"><em><strong>noun</strong></em> - BIOCHEMISTRY <br>
+            <span>UK: /ˌvɪt.ə.mɪn ˈsiː/ US: /ˌvaɪ.t̬ə.mɪn ˈsiː/</span></p>
+            <p class="vitamin-def">A vitamin found in foods such as citrus fruit and
+            green vegetables. It is important for fighting infection and for healthy bones,
+            joints, teeth, and gums.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 </div>
+
+
+
+  <%# <p>Did you know that <strong>vitamin B2</strong> can help treat migraines ?
+    Or that <strong>vitamin A</strong> can counter hair loss ?</p> %>
