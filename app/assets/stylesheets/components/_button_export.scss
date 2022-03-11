@@ -6,12 +6,11 @@
   font-size: 19px;
   font-weight: 500;
   font-family: Montserrat;
-  justify-content: center;
   cursor: pointer;
-  display: inline-table;
-  height: 34px;
-  margin-top: 0px;
-  margin-left: -32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
 
   &:hover {
    background-color: #FFB07B;
@@ -28,6 +27,13 @@
 }
 
 .input-mail {
-  border-radius: 5px;
-  padding: 4px 46px;
+  border-radius: 5px 0 0 5px;
+  border: 2px solid #FF7B00;
+  border-right: 0px;
+  padding: 0.5rem 1rem;
+  text-align: left;
+  width:300px;
+  &:focus{
+    outline: none;
+  }
 }

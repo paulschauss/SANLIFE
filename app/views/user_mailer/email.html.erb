@@ -9,9 +9,9 @@
   </style>
 
   <body style="font-family:verdana;">
-    <h2>Hi <%= @user.first_name %>, </h2>
-    <h3>Thanks for using SANLIFE!</h3>
-    <p>Below is a list of foods which contain the relevant vitamins and minerals that you may need:</p>
+    <h2>Hi there! </h2>
+    <h3>Thanks for using SANLIFE.</h3>
+    <p>Below is the list of foods that you selected:</p>
         <% @nutrients_with_food.each do |nutrient, excluded_foods| %>
         <p>Foods with <strong><%= nutrient.name %></strong>:</p>
         <ul>
