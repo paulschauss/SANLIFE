@@ -6,7 +6,7 @@ body {
 
 .footer {
     margin-top: auto;
-    border-top: 1px solid #fff4eb;
+    background-color: #fff4eb;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -40,7 +40,7 @@ body {
 .logout_link {
   text-decoration: none;
   opacity: 0.8;
-  color: white;
+  color: #fff4eb;
 
   &:hover {
     color: #FF7B00;
