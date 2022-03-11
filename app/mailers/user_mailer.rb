@@ -6,7 +6,6 @@ class UserMailer < ApplicationMailer
     excluded_foods = params[:excluded_foods]
     @nutrients_with_food = FoodByNutrientService.call(@nutrients, excluded_foods)
 
-    mail(to: @user.email, subject: "Your Food Plan")
+    mail(to: params[:email], subject: "Your Food Plan")
   end
-
 end

@@ -86,3 +86,23 @@ groups = NutrientFood.all.group_by {|nf| [nf.food.name, nf.nutrient_id]}.values
 groups.each do |group|
   group.sort_by(&:measure_value)[1..].each(&:destroy)
 end
+
+p "Clean bad food"
+
+bad_food = [
+  "Butter",
+  "Sausage",
+  "Restaurant",
+  "Frankfurter",
+  "Onion rings",
+  "Mushroom",
+  "Sauce",
+  "Bread",
+  "Cookies",
+  "Ketchup",
+  "Sugars",
+  "Salt",
+  "Oil"
+]
+
+Food.where(name: bad_food).destroy_all
